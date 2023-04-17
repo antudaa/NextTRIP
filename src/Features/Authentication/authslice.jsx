@@ -41,17 +41,17 @@ const initialState = {
 const authSlice = createSlice({
     name: "auth",
     initialState,
-    reducers: {
-        // Logout Functionality
-        // logOut: (state) => {
-        //     state.email = "";
-        // },
-        // // Setting Up User For User Persistency 
-        // setUser: (state, { payload }) => {
-        //     state.email = payload;
-        //     state.isLoading = false;
-        // },
-    },
+    // reducers: {
+    //     // Logout Functionality
+    //     // logOut: (state) => {
+    //     //     state.email = "";
+    //     // },
+    //     // // Setting Up User For User Persistency 
+    //     // setUser: (state, { payload }) => {
+    //     //     state.email = payload;
+    //     //     state.isLoading = false;
+    //     // },
+    // },
     // extraReducers: (builder) => {
     //     builder
     //         // SignUp Functionality 
@@ -130,7 +130,7 @@ const authSlice = createSlice({
 });
 
 // Importing All data 
-export const { logOut, setUser } = authSlice.actions;
+// export const { logOut, setUser } = authSlice.actions;
 
 export default authSlice.reducer;
 
