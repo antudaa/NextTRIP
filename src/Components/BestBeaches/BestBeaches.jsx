@@ -1,4 +1,5 @@
 import React from 'react';
+import BeachVideo from '../../assets/Videos/video-section.mp4';
 
 const BestBeaches = () => {
     return (
@@ -34,11 +35,12 @@ const BestBeaches = () => {
                 </div>
                 <div className="relative">
                     {/* Right Side Image */}
-                    <img
+                    {/* <img
                         className=" object-cover w-full h-56 rounded shadow-lg sm:h-96"
                         src="https://res.cloudinary.com/simpleview/image/upload/v1450117455/clients/norway/unesco-geirangerfjord-skagefla-waterfall-2-1_6cc6a64a-a204-432e-8753-01ef2080f24e.jpg"
                         alt=""
-                    />
+                    /> */}
+                    <video className=" object-cover w-full h-56 rounded shadow-lg sm:h-96" src={BeachVideo} autoPlay loop muted />
                     <div className="mt-[-50px]">
                         <ul className="flex gap-y-2 z-40 flex-wrap items-center justify-center [&>*]:px-12 lg:divide-x">
                             {/* DAYS */}

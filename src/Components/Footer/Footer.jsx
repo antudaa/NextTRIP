@@ -1,5 +1,6 @@
 import React from 'react';
 import SiteLogo from '../../assets/images/Logo.png';
+import FooterVideo from '../../assets/Videos/video-section.mp4';
 
 const Footer = () => {
     return (
