@@ -7,7 +7,7 @@ const WorldTourCard = ({ tour }) => {
 
     return (
 
-        <div className="bg-white rounded-md">
+        <div className="bg-white  rounded-md">
             <div className="card-body">
                 <div className="flex">
                     <div className="mt-4 mr-3">

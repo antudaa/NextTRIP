@@ -21,7 +21,7 @@ const NextHoliday = () => {
                             </span>
                         </span>
                     </h1>
-                    <button className="btn px-10 bg-white text-pink-400 ml-20 mt-8 rounded-3xl">
+                    <button className="btn px-10 bg-white text-sky-400 ml-20 mt-8 rounded-3xl">
                         View all Package
                     </button>
                 </div>

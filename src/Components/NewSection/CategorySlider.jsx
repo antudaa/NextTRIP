@@ -1,8 +1,8 @@
 import React from 'react';
-import CategoryCard from '../Cards/CategoryCard/CategoryCard';
 import nextArrow from "../../assets/Icons/next.png";
 import backArrow from "../../assets/Icons/previous.png";
-import CategorySlider from '../NewSection/CategorySlider';
+import CategoryCard from '../Cards/CategoryCard/CategoryCard';
+import './CategorySlider.css';
 
 
 // Categories Data
@@ -80,19 +80,43 @@ const Categories = [
     }
 ]
 
-const CategorySection = () => {
+const CategorySlider = () => {
+
+    // Handler For Back
+    const scrollBack = () => {
+        document.getElementById("content").scrollLeft -= 400;
+    };
+
+    // Handler For Slide Next
+    const scrollNext = () => {
+        document.getElementById("content").scrollLeft += 400;
+    };
 
     return (
-        <div className='p-8'>
-            <div className='mx-auto w-[90%] text-center'>
-                <div className='py-14'>
-                    {/* Header Text For Category Section */}
-                    <h2 className='text-gray-700 mt-8 text-4xl font-bold capitalize mb-10'>OUR <span className='underline text-cyan-400'><span className='text-gray-700'>DESTINATIONS</span></span></h2>
-                </div>
+        <div className='relative'>
+            {/* Next Previous Button To Control Slider */}
+            <div className='absolute right-10 z-10 top-[-80px]'>
+                {/* Button For Slide Back */}
+                <button onClick={scrollBack} className='p-3 m-2 rounded-full bg-white'>
+                    <img className='w-[30px] h-[30px]' src={backArrow} alt="" />
+                </button>
+                {/* Button For Slide Next */}
+                <button onClick={scrollNext} className='p-3 m-2 rounded-full bg-white'>
+                    <img className='w-[30px] h-[30px]' src={nextArrow} alt="" />
+                </button>
             </div>
-            <CategorySlider className="py-4" />
+            {/* Card Slider */}
+            <div id="content" className='carousel scroll-smooth relative p-4 flex items-center justify-start gap-8 overflow-x-auto'>
+                {
+                    Categories.map((category) => (
+                        <div key={category.id}>
+                            <CategoryCard key={category.id} category={category} />
+                        </div>
+                    ))
+                }
+            </div>
         </div>
     );
 };
 
-export default CategorySection;
+export default CategorySlider;
