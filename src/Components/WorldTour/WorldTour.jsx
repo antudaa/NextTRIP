@@ -1,6 +1,7 @@
 import React from 'react';
 import WorldTourCard from '../Cards/WorldTourCard/WorldTourCard';
 
+// World Tour Data
 const WorldTourData = [
     {
         id: 1,
@@ -23,11 +24,13 @@ const WorldTourData = [
 ]
 
 const WorldTour = () => {
+
     return (
         <div className="lg:w-[80%] w-[90%] mx-auto pt-10">
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
                 {
                     WorldTourData.map((tour) => (
+                        // Card For World Tour
                         <WorldTourCard
                             key={tour.id}
                             tour={tour}

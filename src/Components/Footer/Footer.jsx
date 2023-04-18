@@ -3,6 +3,7 @@ import SiteLogo from '../../assets/images/Logo.png';
 import FooterVideo from '../../assets/Videos/video-section.mp4';
 
 const Footer = () => {
+    
     return (
         <footer
             // Footer Background Image 
@@ -42,6 +43,7 @@ const Footer = () => {
                     </a>
                 </div>
                 <div className="grid grid-cols-1 text-sm gap-x-3 mx-auto gap-y-8 lg:w-2/3 sm:grid-cols-4">
+
                     {/* Product Links */}
                     <div className="space-y-3">
                         <h3 className="tracking-wide uppercase text-dark">Product</h3>
@@ -68,6 +70,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
+
                     {/* Company Links */}
                     <div className="space-y-3">
                         <h3 className="tracking-wide uppercase text-dark">Company</h3>
@@ -84,6 +87,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
+
                     {/* Developers Links */}
                     <div className="space-y-3">
                         <h3 className="uppercase text-dark">Developers</h3>
@@ -105,6 +109,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
+
                     {/* Social Media Links */}
                     <div className="space-y-3">
                         <div className="uppercase dark:text-gray-50">Social media</div>
@@ -115,6 +120,7 @@ const Footer = () => {
                                 title="Facebook"
                                 className="flex items-center p-1"
                             >
+                                {/* Facebook Icon */}
                                 <img
                                     className="w-5 h-5 fill-current"
                                     src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png"
@@ -127,6 +133,7 @@ const Footer = () => {
                                 title="Twitter"
                                 className="flex items-center p-1"
                             >
+                                {/* Twitter Icon */}
                                 <img
                                     className="w-5 h-5 fill-current"
                                     src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
@@ -139,6 +146,7 @@ const Footer = () => {
                                 title="Instagram"
                                 className="flex items-center p-1"
                             >
+                                {/* Instagram Icon */}
                                 <img
                                     className="w-5 h-5 fill-current"
                                     src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"

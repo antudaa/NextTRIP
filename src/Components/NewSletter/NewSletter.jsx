@@ -1,6 +1,7 @@
 import React from 'react';
 
 const NewSletter = () => {
+
     return (
         <section className="py-28 relative my-8">
             <div className="relative z-10 max-w-screen-xl mx-auto px-4 justify-between items-center gap-12 md:px-8 md:flex">
@@ -10,6 +11,7 @@ const NewSletter = () => {
                     </h3>
                 </div>
                 <div className="flex-1 mt-6 md:mt-0">
+                    {/* Input Form For NewSletter Section */}
                     <form onSubmit={(e) => e.preventDefault()} className="flex items-center gap-x-3 md:justify-end">
                         <div className="relative">
                             <svg className="w-6 h-6 text-gray-400 absolute left-3 inset-y-0 my-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -22,12 +24,14 @@ const NewSletter = () => {
                                 className="w-full pl-12 pr-3 py-2 text-gray-500 bg-white outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                             />
                         </div>
+                        {/* Submit Button */}
                         <button className="block w-auto py-3 px-4 font-medium text-sm text-center text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 active:shadow-none rounded-lg shadow">
                             Subscribe
                         </button>
                     </form>
                 </div>
             </div>
+            {/* Background Gradient Color For NewSletter Section  */}
             <div className="absolute inset-0 w-full h-full" style={{ background: "linear-gradient(to right, aliceblue , skyblue)" }}></div>
         </section>
     );

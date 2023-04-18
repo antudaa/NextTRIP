@@ -1,11 +1,16 @@
 import React from 'react';
 
 const EventTourCard = () => {
+
     return (
         <div className="w-full p-4">
             <a href="" className="c-card block bg-white shadow-md hover:shadow-xl overflow-hidden rounded-md">
                 <div className="relative pb-48 overflow-hidden">
-                    <img className="absolute inset-0 h-full w-full object-cover" src="https://landscapephotographymagazine.com/wp-content/uploads/2019/07/Antelope-Canyon-Arizona-USA-by-Craig-Bill.jpg" alt="" />
+                    <img
+                        className="absolute inset-0 h-full w-full object-cover"
+                        src="https://landscapephotographymagazine.com/wp-content/uploads/2019/07/Antelope-Canyon-Arizona-USA-by-Craig-Bill.jpg"
+                        alt=""
+                    />
                 </div>
                 <div className="p-4">
                     <span className="inline-block px-2 py-1 leading-none bg-orange-200 text-orange-800 rounded-full font-semibold uppercase tracking-wide text-xs">Highlight</span>

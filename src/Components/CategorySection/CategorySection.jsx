@@ -2,7 +2,7 @@ import React from 'react';
 import CategoryCard from '../Cards/CategoryCard/CategoryCard';
 
 
-// Categories 
+// Categories Data
 const Categories = [
     {
         id: 1,
@@ -79,11 +79,11 @@ const Categories = [
 
 const CategorySection = () => {
 
-    
     return (
         <div className='p-8'>
             <div className='mx-auto w-[80%] text-center'>
                 <div>
+                    {/* Header Text For Category Section */}
                     <h2 className='text-gray-700 mt-8 text-4xl font-bold capitalize mb-10'>OUR <span className='underline text-cyan-400'><span className='text-gray-700'>DESTINATIONS</span></span></h2>
                 </div>
             </div>
