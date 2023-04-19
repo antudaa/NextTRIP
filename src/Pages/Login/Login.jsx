@@ -1,10 +1,11 @@
 import React from 'react';
+import LoginPageBackground from "../../assets/images/LoginPageBackground.jpg";
 
 const Login = () => {
     return (
         <div className="relative">
             <img
-                src="https://images.pexels.com/photos/3228766/pexels-photo-3228766.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                src={LoginPageBackground}
                 className="absolute inset-0 object-cover w-full h-full"
                 alt=""
             />

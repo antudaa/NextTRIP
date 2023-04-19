@@ -4,7 +4,7 @@ const SignUp = () => {
     return (
         <div className="relative">
             <img
-                src="https://images.pexels.com/photos/3747463/pexels-photo-3747463.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                src="https://c4.wallpaperflare.com/wallpaper/484/759/680/tropical-indonesia-sea-clouds-wallpaper-preview.jpg"
                 className="absolute inset-0 object-cover w-full h-full"
                 alt=""
             />

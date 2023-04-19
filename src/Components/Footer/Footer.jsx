@@ -1,13 +1,13 @@
 import React from 'react';
 import SiteLogo from '../../assets/images/Logo.png';
-import FooterVideo from '../../assets/Videos/video-section.mp4';
+import FooterBackground from "../../assets/images/FooterBackground.jpg";
 
 const Footer = () => {
 
     return (
         <footer
             // Footer Background Image 
-            style={{ backgroundImage: `url(https://c4.wallpaperflare.com/wallpaper/98/180/952/nature-sea-beach-ocean-wallpaper-preview.jpg)`, opacity: 0.9 }}
+            style={{ backgroundImage: `url(${FooterBackground})`}}
             className="px-4 divide-y bg-[aliceblue] py-10 bg-opacity-75 bg-cover bg-center bg-no-repeat"
         >
             <div className="py-10 flex flex-wrap justify-between mx-auto w-[80%] lg:text-center">
