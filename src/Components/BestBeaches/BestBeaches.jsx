@@ -8,7 +8,7 @@ const BestBeaches = () => {
             <div className="grid gap-10 lg:grid-cols-2">
                 <div className="lg:pr-10 ">
                     <h5 className="mb-4 text-4xl font-extrabold leading-none">
-                        The Best Deal
+                        Our Best Deal
                     </h5>
                     {/* Description About Deal*/}
                     <p className="mb-6 text-gray-900">
@@ -30,7 +30,7 @@ const BestBeaches = () => {
                     {/* Book Now Button */}
                     <div className="flex items-center space-x-4">
                         <button className="btn bg-cyan-400 px-8 hover:bg-cyan-500 text-white border-none rounded-full">
-                            Book Now
+                            Book Now 
                         </button>
                     </div>
                 </div>

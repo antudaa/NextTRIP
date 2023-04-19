@@ -3,12 +3,12 @@ import SiteLogo from '../../assets/images/Logo.png';
 import FooterVideo from '../../assets/Videos/video-section.mp4';
 
 const Footer = () => {
-    
+
     return (
         <footer
             // Footer Background Image 
-            style={{ backgroundImage: `url(https://images.unsplash.com/photo-1541447237128-f4cac6138fbe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80)`, opacity: 0.9 }}
-            className="px-4 divide-y bg-[aliceblue] mt-10 py-10 bg-opacity-75 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(https://c4.wallpaperflare.com/wallpaper/98/180/952/nature-sea-beach-ocean-wallpaper-preview.jpg)`, opacity: 0.9 }}
+            className="px-4 divide-y bg-[aliceblue] py-10 bg-opacity-75 bg-cover bg-center bg-no-repeat"
         >
             <div className="py-10 flex flex-wrap justify-between mx-auto w-[80%] lg:text-center">
                 <div>
@@ -26,7 +26,7 @@ const Footer = () => {
                     </button>
                 </div>
             </div>
-            <div className="container w-[80%] bg-white flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
+            <div className="container w-[90%] md:w-[80%] lg:w-[80%] bg-white flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
                 <div className="lg:w-1/3">
                     <a
                         rel="noopener noreferrer"
@@ -158,7 +158,7 @@ const Footer = () => {
                 </div>
             </div>
             {/* Copyright Text */}
-            <div className="py-6 text-sm text-center dark:text-white bg-sky-500 w-[80%] mx-auto">
+            <div className="py-6 text-sm text-center dark:text-white bg-sky-500 w-[90%] md:w-[80%] lg:w-[80%] mx-auto">
                 © 2023 shamima_kabir_antu. All rights reserved.
             </div>
         </footer>

@@ -7,7 +7,7 @@ const CategoryCard = ({ category }) => {
     const { img, categoryName, availablePackagePlaceName, availablePackageQuantity } = category;
 
     return (
-        <div className="shadow-md duration-500 hover:scale-105 hover:shadow-xl relative group opacity-90 flex justify-center items-center h-[320px] w-[200px] rounded-full">
+        <div className="shadow-md duration-500 hover:shadow-xl relative group opacity-90 flex justify-center items-center h-[320px] w-[200px] rounded-full">
             {/* Background Image For Category Card */}
             <img
                 className="object-center object-cover rounded-full h-[320px] w-[200px]"
@@ -25,7 +25,7 @@ const CategoryCard = ({ category }) => {
                 <h3 className="text-white text-2xl font-semibold py-4 px-5">Packages</h3>
                 {
                     // Mapping Available Packages Place Name 
-                    availablePackagePlaceName.map((name, i) => (
+                    availablePackagePlaceName.slice(0, 3).map((name, i) => (
                         <p
                             key={i}
                             className='text-sm mb-1 text-white'>

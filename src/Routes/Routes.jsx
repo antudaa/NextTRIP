@@ -3,6 +3,7 @@ import Main from "../Layouts/Main/Main";
 import Home from "../Pages/Home/Home";
 import SignUp from "../Pages/SignUp/SignUp";
 import Login from "../Pages/Login/Login";
+import ErrorPage from "../Pages/Error/ErrorPage";
 
 export const routes = createBrowserRouter([
     {
@@ -26,5 +27,9 @@ export const routes = createBrowserRouter([
                 element: <Login />
             }
         ]
+    },
+    {
+        path: '*',
+        element: <ErrorPage />
     }
 ])

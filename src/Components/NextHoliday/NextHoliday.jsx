@@ -1,5 +1,6 @@
 import React from 'react';
 import img from "../../assets/images/city6.jpg";
+import { Link } from 'react-router-dom';
 
 const NextHoliday = () => {
 
@@ -21,9 +22,9 @@ const NextHoliday = () => {
                             </span>
                         </span>
                     </h1>
-                    <button className="btn px-10 bg-white text-sky-400 ml-20 mt-8 rounded-3xl">
-                        View all Package
-                    </button>
+                    <Link className="btn px-10 bg-white hover:bg-white hover:text-sky-500 text-pink-500 ml-20 mt-8 rounded-3xl">
+                        View all Package 
+                    </Link>
                 </div>
             </div>
         </div>

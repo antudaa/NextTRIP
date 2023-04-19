@@ -1,38 +1,52 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const NewSletter = () => {
 
     return (
-        <section className="py-28 relative my-8">
-            <div className="relative z-10 max-w-screen-xl mx-auto px-4 justify-between items-center gap-12 md:px-8 md:flex">
-                <div className="flex-1 max-w-lg">
-                    <h3 className="text-3xl font-bold">
-                        Get our beautiful newsletter straight to your inbox.
-                    </h3>
-                </div>
-                <div className="flex-1 mt-6 md:mt-0">
-                    {/* Input Form For NewSletter Section */}
-                    <form onSubmit={(e) => e.preventDefault()} className="flex items-center gap-x-3 md:justify-end">
-                        <div className="relative">
-                            <svg className="w-6 h-6 text-gray-400 absolute left-3 inset-y-0 my-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-                            </svg>
+        <section className="py-14 max-w-screen-xl mx-auto">
+            <div
+                // Background Image For NewSletter 
+                style={{ backgroundImage: `url(https://c4.wallpaperflare.com/wallpaper/880/574/451/landscape-railay-beach-nature-thailand-wallpaper-preview.jpg)` }}
+                className="relative overflow-hidden mx-4 px-4 py-14 rounded-2xl opacity-100 bg-cover bg-center bg-no-repeat md:px-8 md:mx-8">
+                <div className="relative z-10 max-w-xl mx-auto sm:text-center">
+                    <div className="space-y-3">
+
+                        <h3 className="text-3xl text-white font-bold">
+                            Sign up to our newsletter
+                        </h3>
+                        <p className="text-blue-100 leading-relaxed">
+                            Receive latest tours, updates and many other things every weak...
+                        </p>
+                    </div>
+                    <div className="mt-6">
+                        {/* Newsletter Form */}
+                        <form
+                            onSubmit={(e) => e.preventDefault()}
+                            className="flex items-center justify-center bg-white rounded-lg p-1 sm:max-w-md sm:mx-auto">
                             <input
                                 type="email"
-                                required
                                 placeholder="Enter your email"
-                                className="w-full pl-12 pr-3 py-2 text-gray-500 bg-white outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                                className="text-gray-500 w-full p-2 outline-none"
                             />
-                        </div>
-                        {/* Submit Button */}
-                        <button className="block w-auto py-3 px-4 font-medium text-sm text-center text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 active:shadow-none rounded-lg shadow">
-                            Subscribe
-                        </button>
-                    </form>
+                            {/* Submit Button For NewSletter Form  */}
+                            <Link
+                                className="p-2 px-2 rounded-lg font-medium text-white bg-sky-500 hover:bg-blue-500 active:bg-blue-700 duration-150 outline-none shadow-md focus:shadow-none"
+                            >
+                                <img className='w-[22px] h-[22px] inline mx-auto my-auto'
+                                    src="https://cdn-icons-png.flaticon.com/512/2983/2983787.png" alt=""
+                                />
+                            </Link>
+                        </form>
+                        {/* Privacy Message For User */}
+                        <p className="mt-3 max-w-lg text-[15px] text-blue-100 sm:mx-auto">
+                            No spam ever, we are care about the protection of your data.
+                            Read our <Link className="underline" href="javascript:void(0)"> Privacy Policy </Link>
+                        </p>
+                    </div>
                 </div>
+                <div className="absolute inset-0 w-full h-full" style={{ background: "linear-gradient(268.24deg, rgba(59, 130, 246, 0.76) 50%, rgba(59, 130, 246, 0.545528) 80.61%, rgba(55, 48, 163, 0) 117.35%)" }}></div>
             </div>
-            {/* Background Gradient Color For NewSletter Section  */}
-            <div className="absolute inset-0 w-full h-full" style={{ background: "linear-gradient(to right, aliceblue , skyblue)" }}></div>
         </section>
     );
 };
