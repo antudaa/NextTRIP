@@ -124,7 +124,7 @@ const CategorySlider = () => {
     };
 
     return (
-        <div className='relative'>
+        <div className='relative mx-auto w-[90%]'>
             {/* Next Previous Button To Control Slider */}
             <div className='absolute right-0 z-10 top-[-60px]'>
                 {/* Button For Slide Back */}
