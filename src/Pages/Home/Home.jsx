@@ -12,6 +12,8 @@ const Home = () => {
             {/* Category Section Home Page */}
             <CategorySection />
             {/* Next Holiday */}
+            {/* Next Holiday */}
+            {/* Next Holiday */}
             <NextHoliday />
             {/* Best Beaches */}
             <BestBeaches />
