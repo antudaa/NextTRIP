@@ -2,6 +2,7 @@ import React from 'react';
 import LoginPageBackground from "../../assets/images/LoginPageBackground.jpg";
 
 const Login = () => {
+
     return (
         <div className="relative">
             <img
