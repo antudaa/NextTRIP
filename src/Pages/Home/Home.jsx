@@ -5,6 +5,8 @@ import BestPackagesHomePage from '../../Components/BestPackagesHomePage/BestPack
 import NewSletter from '../../Components/NewSletter/NewSletter';
 import CategorySection from '../../Components/CategorySection/CategorySection';
 import NextHoliday from '../../Components/NextHoliday/NextHoliday';
+import WorldTour from '../../Components/WorldTour/WorldTour';
+import NewSection from '../../Components/NewSection/CategorySlider';
 
 const Home = () => {
     return (
@@ -17,6 +19,8 @@ const Home = () => {
             <NextHoliday />
             {/* Best Beaches */}
             <BestBeaches />
+            {/* World Tour */}
+            <WorldTour />
             {/* Discover World */}
             <Discover />
             {/* Best Packages Home */}
