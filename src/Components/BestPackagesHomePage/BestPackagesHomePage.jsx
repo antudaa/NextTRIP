@@ -6,20 +6,18 @@ import data from "../../../ToursData.json";
 
 const BestPackagesHomePage = () => {
 
-    console.log(data);
-
     // Handler For Back
     const scrollBack = () => {
-        document.getElementById("tour-card-content").scrollLeft -= 400;
+        document.getElementById("tour-card-content").scrollLeft -= 350;
     };
 
     // Handler For Slide Next
     const scrollNext = () => {
-        document.getElementById("tour-card-content").scrollLeft += 400;
+        document.getElementById("tour-card-content").scrollLeft += 350;
     };
 
     return (
-        <div className="container lg:ml-44 relative lg:w-[85%]">
+        <div className="container md:ml-32 md:w-[80%] ml-6 w-[90%] lg:ml-44 relative lg:w-[85%]">
             <div className='lg:text-5xl md:text-3xl text-2xl font-semibold text-black pl-6 text-start my-6'>
                 {/* Header Text For Best Packages Home Section */}
                 <h2>Find Popular <br /> Destinations </h2>

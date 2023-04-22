@@ -6,11 +6,13 @@ import NewSletter from '../../Components/NewSletter/NewSletter';
 import CategorySection from '../../Components/CategorySection/CategorySection';
 import NextHoliday from '../../Components/NextHoliday/NextHoliday';
 import WorldTour from '../../Components/WorldTour/WorldTour';
-import NewSection from '../../Components/NewSection/CategorySlider';
+import BannerSection from '../../Components/BannerSection/BannerSection';
 
 const Home = () => {
     return (
         <div>
+            {/* Banner Section */}
+            <BannerSection />
             {/* Category Section Home Page */}
             <CategorySection />
             {/* Next Holiday */}

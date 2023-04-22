@@ -31,7 +31,7 @@ const NewSletter = () => {
                             />
                             {/* Submit Button For NewSletter Form  */}
                             <Link
-                                className="p-2 px-2 rounded-lg font-medium text-white bg-sky-500 hover:bg-blue-500 active:bg-blue-700 duration-150 outline-none shadow-md focus:shadow-none"
+                                className="p-2 px-3 rounded-lg font-medium text-white bg-sky-500 hover:bg-blue-500 active:bg-blue-700 duration-150 outline-none shadow-md focus:shadow-none"
                             >
                                 <img className='w-[22px] h-[22px] inline mx-auto my-auto'
                                     src="https://cdn-icons-png.flaticon.com/512/2983/2983787.png" alt=""
