@@ -1,13 +1,13 @@
-import apiSlice from "../api/apiSlice";
+// import apiSlice from "../api/apiSlice";
 
-const eventTourApi = apiSlice.injectEndpoints({
-    endpoints : (builder) => ({
-        getTours : builder.query({
-            query :()=>({
-                url : "/tours"
-            })
-        })
-    })
-})
+// const eventTourApi = apiSlice.injectEndpoints({
+//     endpoints : (builder) => ({
+//         getTours : builder.query({
+//             query :()=>({
+//                 url : "/tours"
+//             })
+//         })
+//     })
+// })
 
-export const {useGetToursQuery} = eventTourApi;
+// export const {useGetToursQuery} = eventTourApi;

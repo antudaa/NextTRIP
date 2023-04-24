@@ -37,8 +37,8 @@ const BestPackagesHomePage = () => {
             {/* Card Slider */}
             <div id="tour-card-content" className='carousel scroll-smooth relative p-4 flex items-center justify-start gap-4 overflow-x-auto'>
                 {
-                    data.map((tourData) => (
-                        <EventTourCard key={tourData.id} data={tourData} />
+                    data.map((tourData, i) => (
+                        <EventTourCard key={i} data={tourData} />
                     ))
                 }
             </div>
