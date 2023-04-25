@@ -21,7 +21,7 @@ const TopCountriesCard = () => {
 
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4 text-yellow-300"
+                        className="h-4 w-4 text-yellow-300"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                     >

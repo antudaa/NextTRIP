@@ -5,7 +5,7 @@ import CategorySlider from '../NewSection/CategorySlider';
 const CategorySection = () => {
 
     return (
-        <div className='p-8'>
+        <div className='px-8 pt-[100px] lg:pt-16'>
             <div className='mx-auto w-[80%] text-start'>
                 <div className='py-14'>
                     {/* Header Text For Category Section */}

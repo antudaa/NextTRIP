@@ -29,13 +29,13 @@ const ProfileDropDown = (props) => {
                     onClick={() => setState(!state)}
                 >
                     <img
-                        src="https://randomuser.me/api/portraits/men/46.jpg"
+                        src="https://media.licdn.com/dms/image/D5603AQGZevHjIIVXSQ/profile-displayphoto-shrink_100_100/0/1670482539135?e=1687996800&v=beta&t=7r9I6hJtTVLMI7pL6m1lonFEMcsXPj_GpW3g3ojstLY"
                         className="w-full h-full rounded-full"
                     />
                 </button>
                 <div className="lg:hidden">
-                    <span className="block">Micheal John</span>
-                    <span className="block text-sm text-gray-500">john@gmail.com</span>
+                    <span className="block">Antu Das</span>
+                    <span className="block text-sm text-gray-500">antu.haks@gmail.com</span>
                 </div>
             </div>
             <ul className={`bg-white top-12 right-0 mt-5 space-y-5 lg:absolute lg:border lg:rounded-md lg:text-sm lg:w-52 lg:shadow-md lg:space-y-0 lg:mt-0 ${state ? '' : 'lg:hidden'}`}>
@@ -79,7 +79,7 @@ const Navbar = () => {
         { title: "Sign Up", path: `/signUp` },
     ]
     return (
-        <nav className={`${color ? "hidden" : "lg:fixed"} scroll border-none`}>
+        <nav className={`bg-[aliceblue] opacity-100  w-full border-none`}>
             <div className="flex items-center justify-end py-3 px-4 max-w-screen-xl mx-auto md:px-8">
                 <div className="flex-none lg:flex-initial">
                     <Link href="/">
@@ -96,10 +96,10 @@ const Navbar = () => {
                         <ul className="mt-12 space-y-5 lg:flex lg:space-x-6 lg:space-y-0 lg:mt-0">
                             {
                                 navigation.map((item, idx) => (
-                                    <li key={idx} className="lg:text-white xs:text-gray-600 sm:text-gray-600 hover:text-gray-900">
-                                        <a href={item.path}>
+                                    <li key={idx} className="text-black sm:text-gray-600 hover:text-gray-900">
+                                        <Link to={item.path}>
                                             {item.title}
-                                        </a>
+                                        </Link>
                                     </li>
                                 ))
                             }
@@ -114,7 +114,7 @@ const Navbar = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                             </svg>
                             <input
-                                className="w-full bg-transparent outline-none appearance-none placeholder-white text-white sm:w-auto"
+                                className="w-full bg-transparent outline-none appearance-none placeholder-black text-black sm:w-auto"
                                 type="text"
                                 placeholder="Search"
                             />

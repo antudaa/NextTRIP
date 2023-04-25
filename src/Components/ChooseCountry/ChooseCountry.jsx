@@ -12,6 +12,8 @@ const ChooseCountry = () => {
                 <TopCountriesCard />
                 <TopCountriesCard />
                 <TopCountriesCard />
+                <TopCountriesCard />
+                <TopCountriesCard />
             </div>
         </div>
     );
