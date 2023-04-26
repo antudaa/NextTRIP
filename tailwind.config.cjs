@@ -5,9 +5,11 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   daisyui: {
-    themes: [
-      "cupcake",
-    ],
+    theme: {
+      screens: {
+        'xs': '320px',
+      },
+    },
   },
   theme: {
     extend: {},

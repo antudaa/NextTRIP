@@ -26,23 +26,25 @@ const EventTourCard = ({ tourData }) => {
                         {/* Location Name */}
                         <p className="text-sm">{location}</p>
                     </div>
-                    {/* Ratings */}
-                    <span
-                        className="inline-flex items-center gap-0.5 rounded-full bg-black px-2 py-1 text-xs font-semibold text-white"
-                    >   {rating}
-                        {/* StarRating Icon */}
-                        <img className='h-4 w-4 ml-2' src={starRating} alt="" />
-                    </span>
                 </div>
             </div>
 
 
             <div className="mt-2">
                 <dl>
-                    <div>
-                        <dt className="sr-only">Price</dt>
-                        {/* Price Per Person */}
-                        <dd className="text-lg text-black font-semibold">${pricePerPerson} <span className='text-lg'>/</span> <span className='text-sm text-gray-500'>Person</span> </dd>
+                    <div className='flex justify-between'>
+                        <div>
+                            <dt className="sr-only">Price</dt>
+                            {/* Price Per Person */}
+                            <dd className="text-lg text-black font-semibold">${pricePerPerson} <span className='text-lg'>/</span> <span className='text-sm text-gray-500'>Person</span> </dd>
+                        </div>
+                        {/* Ratings */}
+                        <span
+                            className="inline-flex items-center gap-0.5 rounded-full bg-black px-2 py-1 text-xs font-semibold text-white"
+                        >   {rating}
+                            {/* StarRating Icon */}
+                            <img className='h-4 w-4 ml-2' src={starRating} alt="" />
+                        </span>
                     </div>
 
                     {/* Title */}
