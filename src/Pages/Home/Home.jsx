@@ -19,6 +19,8 @@ const Home = () => {
             {/* Best Beaches */}
             <BestBeaches />
             {/* World Tour */}
+            {/* World Tour */}
+            {/* World Tour */}
             <WorldTour />
             {/* Discover World */}
             <Discover />

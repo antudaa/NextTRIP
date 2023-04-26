@@ -62,7 +62,7 @@ const Navbar = () => {
     //   Navigation Data 
     const navigation = [
         { title: "Home", path: "/" },
-        { title: "Explore Tours", path: "/" },
+        { title: "Explore Tours", path: "/tours" },
         { title: "Blogs", path: "/" },
         { title: "Upcoming Events", path: "/" },
         { title: "Gallery", path: "/" },

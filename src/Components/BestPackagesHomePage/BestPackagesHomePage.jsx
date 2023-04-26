@@ -3,10 +3,15 @@ import EventTourCard from '../Cards/EventTourCard/EventTourCard';
 import backArrow from "../../assets/Icons/previous.png";
 import nextArrow from "../../assets/Icons/next.png";
 import data from "../../../ToursData.json";
+import { useGetToursQuery } from '../../Features/eventTour/eventTourApi';
 
 const BestPackagesHomePage = () => {
 
+    // console.log(data);
+
+    const {data, isLoading,isError} = useGetToursQuery()
     console.log(data);
+
 
     // Handler For Back
     const scrollBack = () => {
@@ -20,9 +25,9 @@ const BestPackagesHomePage = () => {
 
     return (
         <div className="container lg:ml-44 relative lg:w-[85%]">
-            <div className='lg:text-5xl md:text-3xl text-2xl font-semibold text-black pl-6 text-start my-6'>
+            <div className='lg:text-4xl md:text-3xl text-2xl font-bold text-black pl-6 text-start my-6'>
                 {/* Header Text For Best Packages Home Section */}
-                <h2>Find Popular <br /> Destinations </h2>
+                <h2>Find Popular  Destinations </h2>
             </div>
 
             {/* Next Previous Button To Control Slider */}
@@ -39,8 +44,8 @@ const BestPackagesHomePage = () => {
             {/* Card Slider */}
             <div id="tour-card-content" className='carousel scroll-smooth relative p-4 flex items-center justify-start gap-4 overflow-x-auto'>
                 {
-                    data.map((tourData) => (
-                        <EventTourCard key={tourData.id} data={tourData} />
+                    data?.map((tourData) => (
+                        <EventTourCard key={tourData._id} tourData={tourData} />
                     ))
                 }
             </div>

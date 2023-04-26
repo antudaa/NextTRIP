@@ -5,10 +5,11 @@ import bookIcon from "../../../assets/Icons/click.png";
 import { Link } from 'react-router-dom';
 
 
-const EventTourCard = ({ data }) => {
+const EventTourCard = ({ tourData }) => {
 
+    console.log(tourData);
     // Destructure Data
-    const { CoverImage, EventDuration, images, location, placeName, pricePerPerson, rating, title } = data;
+    const { CoverImage, EventDuration, images, location, placeName, pricePerPerson, rating, title } = tourData || {};
 
     return (
         <div className="block rounded-lg p-4 shadow-sm shadow-indigo-100">
