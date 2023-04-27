@@ -7,7 +7,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 const EventTourCard = ({ tourData }) => {
    
-    console.log(tourData);
+    // console.log(tourData);
 
     const navigate = useNavigate()
     // Destructure Data

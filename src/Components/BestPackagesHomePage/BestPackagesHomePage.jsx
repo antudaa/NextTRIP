@@ -6,10 +6,10 @@ import data from "../../../ToursData.json";
 import { useGetToursQuery } from "../../Features/eventTour/eventTourApi";
 
 const BestPackagesHomePage = () => {
-	// console.log(data);
+	
 
 	const { data, isLoading, isError } = useGetToursQuery();
-	console.log(data);
+	// console.log(data);
 
 	// Handler For Back
 	const scrollBack = () => {
