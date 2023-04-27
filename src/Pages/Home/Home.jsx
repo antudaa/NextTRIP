@@ -20,8 +20,7 @@ const Home = () => {
             <NextHoliday />
             {/* Best Beaches */}
             <BestBeaches />
-            {/* World Tour */}
-            {/* World Tour */}
+            
             {/* World Tour */}
             <WorldTour />
             {/* Discover World */}

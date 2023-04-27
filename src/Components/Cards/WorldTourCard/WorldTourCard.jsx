@@ -1,7 +1,7 @@
 import React from 'react';
 
 const WorldTourCard = ({ tour }) => {
-
+    // console.log(tour);
     // Destructuring 
     const { tourName, img, description } = tour;
 
