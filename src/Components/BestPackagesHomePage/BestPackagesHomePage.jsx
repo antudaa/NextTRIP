@@ -64,10 +64,7 @@ const BestPackagesHomePage = () => {
 							(tourData) => (
 								<EventTourCard key={tourData._id} tourData={tourData} />
 							)
-							// data.map((tourData, i) => (
-							//     <EventTourCard key={i} data={tourData} />
-							// ))
-                            //01792997117
+							
 						)}
 					</div>
 				</div>

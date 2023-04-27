@@ -2,14 +2,16 @@ import React from 'react';
 import DurationIcon from "../../../assets/Icons/return-to-the-past.png";
 import starRating from "../../../assets/Icons/star.png";
 import bookIcon from "../../../assets/Icons/click.png";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const EventTourCard = ({ tourData }) => {
-
+   
     console.log(tourData);
+
+    const navigate = useNavigate()
     // Destructure Data
-    const { CoverImage, EventDuration, images, location, placeName, pricePerPerson, rating, title } = tourData || {};
+    const {_id, CoverImage, EventDuration, images, location, placeName, pricePerPerson, rating, title } = tourData || {};
 
     return (
         <div className="block rounded-lg p-4 shadow-sm shadow-indigo-100">
@@ -66,11 +68,12 @@ const EventTourCard = ({ tourData }) => {
                             <p className="font-medium">{EventDuration}</p>
                         </div>
                     </div>
-
+                    {/* onClick={() => navigate(`/tour-details/${_id}`)} */}
+                    {/* to={(`/tour-details/${_id}`)} */}
                     {/* Button For Details & Book Now */}
                     <div className="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
                         <div className="mt-1.5 sm:mt-0">
-                            <Link className='px-4 py-1 bg-gradient-to-r from-cyan-300 to-blue-500 rounded-full border text-sm'>DETAILS</Link>
+                            <Link to={(`/tour-details/${_id}`)}  className='px-4 py-1 bg-gradient-to-r from-cyan-300 to-blue-500 rounded-full border text-sm'>DETAILS</Link>
                         </div>
                     </div>
                     <div className="sm:shrink-0 sm:items-center">

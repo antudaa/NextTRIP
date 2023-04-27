@@ -6,8 +6,13 @@ const eventTourApi = apiSlice.injectEndpoints({
             query :()=>({
                 url : "/tours"
             })
-        })
+        }),
+        tourById : builder.query({
+            query :(id)=>({
+                url : `/tour/${id}`
+            })
+        }),
     })
 })
 
-export const {useGetToursQuery} = eventTourApi;
+export const {useGetToursQuery, useTourByIdQuery} = eventTourApi;
