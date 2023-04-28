@@ -37,7 +37,7 @@ const BannerSection = () => {
         <section>
             <div className="max-w-screen-xxl mx-auto px-4 py-28 gap-12 text-gray-600 md:px-8 xl:flex">
                 <video src={BannerBackgroundVideo} autoPlay loop muted
-                    className="absolute top-0 lg:top-0 left-0 w-full h-[90%] lg:object-cover opacity-30" />
+                    className="absolute top-0 lg:top-0 left-0 w-full h-[90%] object-cover opacity-30" />
                 <div className="space-y-5 max-w-2xl mx-auto text-center xl:text-left">
                     <div className="flex flex-wrap items-center justify-center gap-6 xl:justify-start">
                         {

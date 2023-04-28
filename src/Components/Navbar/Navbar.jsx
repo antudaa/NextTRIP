@@ -9,6 +9,12 @@ const ProfileDropDown = (props) => {
     const profileRef = useRef()
 
     const navigation = [
+        { title: "Home", path: "/" },
+        { title: "Explore Tours", path: "/tours" },
+        { title: "Blogs", path: "/" },
+        { title: "Upcoming Events", path: "/" },
+        { title: "Gallery", path: "/" },
+        { title: "Sign Up", path: "/signUp" },
         { title: "Dashboard", path: `/` },
         { title: "Settings", path: `/` },
         { title: "Log out", path: `/` },
