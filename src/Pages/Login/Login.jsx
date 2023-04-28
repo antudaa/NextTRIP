@@ -1,9 +1,10 @@
 import React from 'react';
-import LoginPageBackground from "../../assets/images/LoginPageBackground.jpg";
 import toast from "react-hot-toast";
 import { useForm } from 'react-hook-form';
 import logo from "../../assets/images/Logo.png";
 import { Link } from 'react-router-dom';
+import loginBackground from "../../assets/Videos/LoginBackgorund.mp4";
+
 
 const Login = () => {
 
@@ -24,8 +25,8 @@ const Login = () => {
 
     return (
         <div className="relative">
-            <img
-                src={LoginPageBackground}
+            <video autoPlay loop muted
+                src={loginBackground}
                 className="absolute inset-0 object-cover w-full h-full"
                 alt=""
             />

@@ -6,7 +6,7 @@ import data from "../../../ToursData.json";
 import { useGetToursQuery } from "../../Features/eventTour/eventTourApi";
 
 const BestPackagesHomePage = () => {
-	
+
 
 	const { data, isLoading, isError } = useGetToursQuery();
 	// console.log(data);
@@ -15,14 +15,13 @@ const BestPackagesHomePage = () => {
 	const scrollBack = () => {
 		document.getElementById("tour-card-content").scrollLeft -= 350;
 	};
-
 	// Handler For Slide Next
 	const scrollNext = () => {
 		document.getElementById("tour-card-content").scrollLeft += 350;
 	};
 
 	return (
-		<div className="container lg:ml-44 relative lg:w-[85%]">
+		<div className="container w-[90%] max-w-screen-xxl relative mx-auto">
 			<div className="lg:text-4xl md:text-3xl text-2xl font-bold text-black pl-6 text-start my-6">
 				<div className="container md:ml-32 md:w-[80%] ml-6 w-[90%] lg:ml-44 relative lg:w-[85%]">
 					<div className="lg:text-5xl md:text-3xl text-2xl font-semibold text-black pl-6 text-start my-6">
@@ -64,7 +63,7 @@ const BestPackagesHomePage = () => {
 							(tourData) => (
 								<EventTourCard key={tourData._id} tourData={tourData} />
 							)
-							
+
 						)}
 					</div>
 				</div>

@@ -16,11 +16,9 @@ const Home = () => {
             {/* Category Section Home Page */}
             <CategorySection />
             {/* Next Holiday */}
-            
             <NextHoliday />
             {/* Best Beaches */}
             <BestBeaches />
-            
             {/* World Tour */}
             {/* World Tour */}
             {/* World Tour */}
