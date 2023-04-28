@@ -5,14 +5,18 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   daisyui: {
+
+  },
+  theme: {
     theme: {
       screens: {
         'xs': '320px',
+
+        'lg': '1074px',
+
+        'xl': '1420px'
       },
     },
-  },
-  theme: {
-    extend: {},
   },
   plugins: [require('daisyui')],
 }

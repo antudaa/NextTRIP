@@ -26,7 +26,7 @@ const WorldTourData = [
 const WorldTour = () => {
 
     return (
-        <div className="lg:w-[80%] w-[90%] mx-auto pt-10">
+        <div className="max-w-screen-xxl w-[90%] mx-auto pt-10">
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
                 {
                     WorldTourData.map((tour) => (
