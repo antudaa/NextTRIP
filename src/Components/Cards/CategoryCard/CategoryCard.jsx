@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useGetToursQuery } from "../../../Features/eventTour/eventTourApi";
 
 const CategoryCard = ({ category }) => {
 	// console.log(category);
+
 	// Destructuring category
+
 	const {
+		
 		img,
 		categoryName,
 		availablePackagePlaceName,
@@ -39,7 +43,8 @@ const CategoryCard = ({ category }) => {
 					))
 				}
 				{/* Button For View The Destinations */}
-				<Link to='/productDetails' className="bg-white mt-4 hover:text-cyan-500 text-cyan-500 text-[12px] rounded-3xl py-2 px-5">VIEW DESTINATIONS</Link>
+				{/* to={(`/tour-details/${_id}`)} */}
+				<Link to={(`/productDetails/${category}`)} className="bg-white mt-4 hover:text-cyan-500 text-cyan-500 text-[12px] rounded-3xl py-2 px-5">VIEW DESTINATIONS</Link>
 			</div>
 		</div>
 	);
