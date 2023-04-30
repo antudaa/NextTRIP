@@ -19,7 +19,7 @@ const SignUp = () => {
 
     // Handle Facebook Login 
     const handleFacebookLogin = () => {
-    }
+    };
 
 
     return (
