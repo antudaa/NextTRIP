@@ -38,7 +38,7 @@ export const routes = createBrowserRouter([
                 element: <TourDetails/>
             },
             {
-                path: '/productDetails/:category',
+                path: '/view-destination/:category',
                 element: <TourPackage/>
             },
         ]

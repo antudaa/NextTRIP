@@ -2,10 +2,10 @@ import React from "react";
 import { useGetToursByCategoryQuery } from "../../../Features/categoryApi/categoryApi";
 
 const TourPackage = () => {
-    // const {category} = useParams()
-    const {data} = useGetToursByCategoryQuery()
+    // const {nature} = useParams()
+    // const {data} = useGetToursByCategoryQuery("france")
 
-    console.log(data);
+    // console.log(data);
 	return (
 		<div>
 
