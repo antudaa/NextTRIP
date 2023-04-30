@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from "../../assets/images/Logo.png";
 import { useForm } from 'react-hook-form';
-import BackgroundImage from "../../assets/images/BannerBackground.jpg";
+import signUpBackground from "../../assets/Videos/SignUpBackground.mp4";
+
 
 const SignUp = () => {
 
@@ -24,8 +25,8 @@ const SignUp = () => {
 
     return (
         <div className="relative">
-            <img
-                src={BackgroundImage}
+            <video autoPlay loop muted
+                src={signUpBackground}
                 className="absolute inset-0 object-cover w-full h-full"
                 alt=""
             />
@@ -46,7 +47,7 @@ const SignUp = () => {
                             <Link
                                 to="/"
                                 aria-label=""
-                                className="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-teal-accent-400 hover:text-teal-accent-700"
+                                className="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-[aliceblue] hover:text-teal-accent-700"
                             >
                                 Learn more
                                 <svg

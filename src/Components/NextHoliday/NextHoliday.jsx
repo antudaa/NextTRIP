@@ -15,7 +15,7 @@ const NextHoliday = () => {
                         <br />
                         Next
                         {/* Underline Text Color  */}
-                        <span className="underline text-sky-400">
+                        <span className="underline text-pink-500">
                             {/* Text Color */}
                             <span className="text-white">
                                 Holiday
