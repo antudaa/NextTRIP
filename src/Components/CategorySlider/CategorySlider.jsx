@@ -1,6 +1,7 @@
 import React from "react";
 import CategoryCard from "../Cards/CategoryCard/CategoryCard";
-import { useGetCategoriesQuery } from "../../Features/eventTour/eventTourApi";
+import { useGetCategoriesQuery } from "../../Features/categoryApi/categoryApi";
+// import { useGetCategoriesQuery } from "../../Features/eventTour/eventTourApi";
 
 
 // Categories Data
@@ -102,7 +103,7 @@ const CategorySlider = () => {
 			{/* Card Slider */}
 			<div id="category-content" className='grid grid-cols-1 min-[1420px]:grid-cols-4 min-[1080px]:grid-cols-3 md:grid-cols-2 gap-6'>
 				{
-					Categories.slice(0, 8).map((category) => (
+					Categories?.slice(0, 8).map((category) => (
 						<div key={category.id}>
 							<CategoryCard
 								key={category.id} category={category} />

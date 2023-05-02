@@ -12,12 +12,9 @@ const eventTourApi = apiSlice.injectEndpoints({
                 url : `/tour/${id}`
             })
         }),
-        getCategories : builder.query({
-            query :()=>({
-                url : '/category'
-            })
-        }),
+        
+        
     })
 })
 
-export const {useGetToursQuery, useTourByIdQuery,useGetCategoriesQuery} = eventTourApi;
+export const {useGetToursQuery, useTourByIdQuery} = eventTourApi;

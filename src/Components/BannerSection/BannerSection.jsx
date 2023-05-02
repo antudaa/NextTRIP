@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import BannerBackgroundVideo from "../../assets/Videos/BannerBackgroundVideo.mp4";
-import SideVideo from "../../assets/Videos/Airballon.mp4";
 import BackgroundImage from "../../assets/images/LoginPageBackground.jpg";
 import { Link } from 'react-router-dom';
+import BannerCards from '../Cards/BannerCards/BannerCards';
+
 
 const BannerSection = () => {
 
@@ -36,44 +36,32 @@ const BannerSection = () => {
     return (
         <section>
             <div className="max-w-screen-xxl mx-auto px-4 py-28 gap-12 text-gray-600 md:px-8 xl:flex">
-                <video src={BannerBackgroundVideo} autoPlay loop muted
-                    className="absolute top-0 lg:top-0 left-0 w-full h-[90%] object-cover opacity-30" />
-                <div className="space-y-5 max-w-2xl mx-auto text-center xl:text-left">
-                    <div className="flex flex-wrap items-center justify-center gap-6 xl:justify-start">
-                        {
-                            features.map((item, idx) => (
-                                <div key={idx} className="flex items-center gap-x-2 text-gray-900 text-sm">
-                                    {item.icon}
-                                    {item.name}
-                                </div>
-                            ))
-                        }
-                    </div>
-                    <h1 className="text-4xl text-gray-800 font-extrabold mx-auto md:text-5xl">
-                        Explore the beauty of the world with us...
+                <img src='https://i.ibb.co/5kXJFpM/Login-Page-Background.jpg'
+                    className="absolute top-0 lg:top-0 left-0 w-full h-full opacity-90 object-cover" />
+                <div className="space-y-5 z-30 max-w-2xl mx-auto text-center xl:text-left">
+                    <h1 className="text-4xl text-white font-extrabold mx-auto md:text-5xl">
+                        Search Your Next <span>Trip</span>
                     </h1>
-                    <p className="max-w-xl mx-auto xl:mx-0">
-                        Experience the Best of Natuere & Culture in the Heart of the CountrySide. Let's Travel and Explore the Beauty of Journey...
+                    <p className="max-w-xl mx-auto xl:mx-0 capitalize text-center text-2xl text-white">
+                        Explore the beauty of the world with us...
                     </p>
-                    <div className="items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0 xl:justify-start">
-                        <Link to="" className="flex items-center justify-center gap-x-2 py-2 px-4 text-white font-medium bg-gray-800 duration-150 hover:bg-gray-700 active:bg-gray-900 rounded-lg md:inline-flex">
-                            Browse Destinations
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
-                                <path fillRule="evenodd" d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z" clipRule="evenodd" />
-                            </svg>
-                        </Link>
-                        <Link to="" className="flex items-center justify-center gap-x-2 py-2 px-4 text-gray-700 hover:text-gray-500 font-medium duration-150 hover:gray-900 active:bg-gray-100 border rounded-lg md:inline-flex">
-                            Subscribe Us
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
-                                <path fillRule="evenodd" d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z" clipRule="evenodd" />
-                            </svg>
-                        </Link>
+                    <div>
+                        <form
+                            onSubmit={(e) => e.preventDefault()}
+                            className="max-w-md px-4 mx-auto mt-12">
+                            <div className="relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="absolute top-0 bottom-0 w-6 h-6 my-auto text-gray-400 left-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                </svg>
+                                <input
+                                    type="text"
+                                    placeholder="Search"
+                                    className="w-full py-3 pl-12 pr-4 text-gray-500 border rounded-md outline-none bg-gray-50 focus:bg-white focus:border-indigo-600"
+                                />
+                            </div>
+                        </form>
                     </div>
-                </div>
-                <div className="flex-1 max-w-xl mx-auto mt-14 xl:mt-0">
-                    <div className="relative">
-                        <video className="object-cover w-full h-56 rounded shadow-lg sm:h-96" src={SideVideo} autoPlay loop muted />
-                    </div>
+                    <BannerCards className="x-40" />
                 </div>
             </div>
         </section>

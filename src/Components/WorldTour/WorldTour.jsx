@@ -6,7 +6,7 @@ const WorldTour = () => {
 
     // Fetching Data Via RTK Query 
     const { data } = useGetWorldTourQuery();
-    console.log(data);
+    // console.log(data);
 
     return (
         <div className="max-w-screen-xxl w-[90%] mx-auto pt-10">
