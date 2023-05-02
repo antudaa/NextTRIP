@@ -4,6 +4,7 @@ import CategorySlider from '../CategorySlider/CategorySlider';
 
 const CategorySection = () => {
 
+
     return (
         <div className='px-8 pt-6 lg:mt-16'>
             <div className='mx-auto w-[90%] text-center md:text-start'>
