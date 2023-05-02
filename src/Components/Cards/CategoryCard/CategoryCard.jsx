@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useGetToursQuery } from "../../../Features/eventTour/eventTourApi";
+import { useGetToursByCategoryQuery } from "../../../Features/categoryApi/categoryApi";
 
 const CategoryCard = ({ category }) => {
 	// console.log(category);
 
 	// Destructuring category
-
+	
 	const {
 		
 		img,
@@ -14,6 +15,11 @@ const CategoryCard = ({ category }) => {
 		availablePackagePlaceName,
 		availablePackageQuantity,
 	} = category;
+	
+
+	const {data} = useGetToursByCategoryQuery(`${categoryName}`)
+	console.log(data);
+
 
 	return (
 		<div className="shadow-md duration-500 hover:shadow-xl mx-auto relative group opacity-90 flex rounded-md justify-center items-center h-[320px] w-[300px]">
@@ -44,7 +50,7 @@ const CategoryCard = ({ category }) => {
 				}
 				{/* Button For View The Destinations */}
 				{/* to={(`/tour-details/${_id}`)} */}
-				<Link to={(`/productDetails/${category}`)} className="bg-white mt-4 hover:text-cyan-500 text-cyan-500 text-[12px] rounded-3xl py-2 px-5">VIEW DESTINATIONS</Link>
+				<Link to={(`/view-destination/${categoryName}`)} className="bg-white mt-4 hover:text-cyan-500 text-cyan-500 text-[12px] rounded-3xl py-2 px-5">VIEW DESTINATIONS</Link>
 			</div>
 		</div>
 	);

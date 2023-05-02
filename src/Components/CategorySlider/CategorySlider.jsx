@@ -96,7 +96,7 @@ const Categories = [
 const CategorySlider = () => {
 
 	const { data, isLoading, isError } = useGetCategoriesQuery()
-	// console.log(data);
+	console.log(data);
 
 	return (
 		<div className='relative my-10 mx-auto w-[90%]'>

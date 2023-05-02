@@ -6,33 +6,33 @@ const BestBeaches = () => {
 	const countDownDate = new Date("Jul 7, 2024 00:00:00").getTime();
 
 	// Update the countdown every 1 second
-	const x = setInterval(function () {
-		// Get today's date and time
-		const now = new Date().getTime();
+	// const x = setInterval(function () {
+	// 	// Get today's date and time
+	// 	const now = new Date().getTime();
 
-		// Find the distance between now and the count down date
-		const distance = countDownDate - now;
+	// 	// Find the distance between now and the count down date
+	// 	const distance = countDownDate - now;
 
-		// Time calculations for days, hours, minutes and seconds
-		const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		const hours = Math.floor(
-			(distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-		);
-		const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// 	// Time calculations for days, hours, minutes and seconds
+	// 	const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	// 	const hours = Math.floor(
+	// 		(distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+	// 	);
+	// 	const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	// 	const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		// Display the result in the corresponding elements
-		document.getElementById("days").textContent = days + "d";
-		document.getElementById("hours").textContent = hours + "h";
-		document.getElementById("minutes").textContent = minutes + "m";
-		document.getElementById("seconds").textContent = seconds + "s";
+	// 	// Display the result in the corresponding elements
+	// 	document.getElementById("days").textContent = days + "d";
+	// 	document.getElementById("hours").textContent = hours + "h";
+	// 	document.getElementById("minutes").textContent = minutes + "m";
+	// 	document.getElementById("seconds").textContent = seconds + "s";
 
-		// If the count down is over, write some text
-		if (distance < 0) {
-			clearInterval(x);
-			document.getElementById("countdown").innerHTML = "EXPIRED";
-		}
-	}, 1000);
+	// 	// If the count down is over, write some text
+	// 	if (distance < 0) {
+	// 		clearInterval(x);
+	// 		document.getElementById("countdown").innerHTML = "EXPIRED";
+	// 	}
+	// }, 1000);
 
 	return (
 		<div className="px-4 pt-16 mx-auto max-w-screen-xxl w-[90%] md:px-24 lg:px-8 lg:pt-20">
