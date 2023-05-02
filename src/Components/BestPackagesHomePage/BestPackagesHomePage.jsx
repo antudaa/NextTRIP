@@ -7,7 +7,7 @@ import { useGetToursQuery } from "../../Features/eventTour/eventTourApi";
 
 const BestPackagesHomePage = () => {
 
-
+	// Fetching Data From Server
 	const { data, isLoading, isError } = useGetToursQuery();
 	// console.log(data);
 
@@ -30,7 +30,7 @@ const BestPackagesHomePage = () => {
 					</div>
 
 					{/* Next Previous Button To Control Slider */}
-					<div className="absolute right-0 z-10 top-0">
+					<div className="absolute right-0 z-10 top-6 sm:top-6">
 						{/* Button For Slide Back */}
 						<button
 							onClick={scrollBack}
@@ -59,9 +59,12 @@ const BestPackagesHomePage = () => {
 						id="tour-card-content"
 						className="carousel scroll-smooth relative p-4 flex items-center justify-start gap-4 overflow-x-auto"
 					>
+						{/* Mapping Data */}
 						{data?.map(
 							(tourData) => (
-								<EventTourCard key={tourData._id} tourData={tourData} />
+								<EventTourCard
+									key={tourData._id}
+									tourData={tourData} />
 							)
 
 						)}

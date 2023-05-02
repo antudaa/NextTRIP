@@ -7,8 +7,14 @@ import CategorySection from '../../Components/CategorySection/CategorySection';
 import NextHoliday from '../../Components/NextHoliday/NextHoliday';
 import WorldTour from '../../Components/WorldTour/WorldTour';
 import BannerSection from '../../Components/BannerSection/BannerSection';
+import Contact from '../../Components/Contact/Contact';
+import FAQ from '../../Components/FAQSection/FAQ';
+import GoToTop from '../../Components/GoToTop/GoToTop';
+import Testimonial from '../../Components/Testimonial/Testimonial';
+import State from '../../Components/State/State';
 
 const Home = () => {
+
     return (
         <div>
             {/* Banner Section */}
@@ -17,16 +23,26 @@ const Home = () => {
             <CategorySection />
             {/* Next Holiday */}
             <NextHoliday />
+            {/* State */}
+            <State />
             {/* Best Beaches */}
             <BestBeaches />
-            {/* World Tour */} 
+            {/* World Tour */}
             <WorldTour />
             {/* Discover World */}
             <Discover />
             {/* Best Packages Home */}
             <BestPackagesHomePage />
+            {/* Testimonial Section */}
+            <Testimonial />
+            {/* FAQ Section */}
+            <FAQ />
+            {/* Contact Us Section */}
+            <Contact />
             {/* NewSletter */}
             <NewSletter />
+            {/* Go To Top */}
+            <GoToTop />
         </div>
     );
 };

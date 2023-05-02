@@ -7,6 +7,7 @@ import ErrorPage from "../Pages/Error/ErrorPage";
 import BestPackagesHomePage from "../Components/BestPackagesHomePage/BestPackagesHomePage";
 import TourDetails from "../Components/Cards/EventTourCard/TourDetails";
 import TourPackage from "../Components/Cards/TourPackage/TourPackage";
+import GalleryPage from "../Pages/GalleryPage/GalleryPage";
 
 export const routes = createBrowserRouter([
     {
@@ -22,6 +23,10 @@ export const routes = createBrowserRouter([
                 element: <Home />
             },
             {
+                path: '/gallery',
+                element: <GalleryPage />
+            },
+            {
                 path: '/signUp',
                 element: <SignUp />
             },
@@ -31,15 +36,15 @@ export const routes = createBrowserRouter([
             },
             {
                 path: '/tours',
-                element: <BestPackagesHomePage/>
+                element: <BestPackagesHomePage />
             },
             {
                 path: '/tour-details/:id',
-                element: <TourDetails/>
+                element: <TourDetails />
             },
             {
                 path: '/view-destination/:category',
-                element: <TourPackage/>
+                element: <TourPackage />
             },
         ]
     },

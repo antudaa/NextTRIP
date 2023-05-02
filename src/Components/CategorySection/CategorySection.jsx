@@ -6,11 +6,16 @@ const CategorySection = () => {
 
 
     return (
-        <div className='px-8 pt-6 lg:mt-16'>
+        <div className='px-8 py-2 mt-8 mb-8'>
             <div className='mx-auto w-[90%] text-center md:text-start'>
-                <div className='pt-2 lg:pt-44'>
+                <div className='pt-2 lg:pt-10 xl:pt-16'>
                     {/* Header Text For Category Section */}
-                    <h2 className='text-gray-700 mt-2 text-2xl md:text-3xl lg:text-4xl font-bold capitalize'>SELECT <span className='underline text-cyan-400'><span className='text-gray-700'>CATEGORY</span></span></h2>
+                    <h2 className='text-gray-700 z-40 mt-2 md:mt-32 lg:mt-52 text-2xl md:text-2xl lg:text-4xl font-bold capitalize'>
+                        SELECT 
+                        <span className='underline text-cyan-400 ml-2'><span className='text-gray-700'>
+                            CATEGORY
+                        </span></span>
+                    </h2>
                 </div>
             </div>
             <CategorySlider className="py-4" />

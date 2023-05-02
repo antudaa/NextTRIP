@@ -163,10 +163,12 @@ const Login = () => {
                                             src="https://cdn-icons-png.flaticon.com/512/2983/2983787.png" alt=""
                                         />
                                     </button>
+
                                 </form>
-                            </div>
-                            <div className="text-center">
-                                <Link to="/login" className="hover:text-indigo-600">Forgot password?</Link>
+
+                                <div className="text-center pb-6">
+                                    <Link to="/login" className="hover:text-indigo-600">Forgot password?</Link>
+                                </div>
                             </div>
                         </div>
                     </div>

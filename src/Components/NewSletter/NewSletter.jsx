@@ -8,7 +8,7 @@ const NewSletter = () => {
             <div
                 // Background Image For NewSletter 
                 style={{ backgroundImage: `url(https://c4.wallpaperflare.com/wallpaper/880/574/451/landscape-railay-beach-nature-thailand-wallpaper-preview.jpg)` }}
-                className="relative overflow-hidden mx-4 px-4 py-14 rounded-2xl opacity-100 bg-cover bg-center bg-no-repeat md:px-8 md:mx-8">
+                className="relative overflow-hidden mx-4 px-4 py-14 rounded-2xl opacity-100 bg-cover object-cover bg-center bg-no-repeat md:px-8 md:mx-8">
                 <div className="relative z-10 max-w-xl mx-auto sm:text-center">
                     <div className="space-y-3">
 

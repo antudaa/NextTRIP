@@ -96,17 +96,18 @@ const Categories = [
 const CategorySlider = () => {
 
 	const { data, isLoading, isError } = useGetCategoriesQuery()
-	console.log(data);
+	// console.log(data);
 
 	return (
 		<div className='relative my-10 mx-auto w-[90%]'>
 			{/* Card Slider */}
-			<div id="category-content" className='grid grid-cols-1 min-[1420px]:grid-cols-4 min-[1080px]:grid-cols-3 md:grid-cols-2 gap-6'>
+			<div id="category-content" className='flex flex-wrap justify-around align-center gap-6'>
 				{
-					Categories?.slice(0, 8).map((category) => (
-						<div key={category.id}>
+					Categories?.map((category, i) => (
+						<div key={i}>
 							<CategoryCard
-								key={category.id} category={category} />
+								key={i}
+								category={category} />
 						</div>
 					))
 				}

@@ -9,12 +9,6 @@ const ProfileDropDown = (props) => {
     const profileRef = useRef()
 
     const navigation = [
-        { title: "Home", path: "/" },
-        { title: "Explore Tours", path: "/tours" },
-        { title: "Blogs", path: "/" },
-        { title: "Upcoming Events", path: "/" },
-        { title: "Gallery", path: "/" },
-        { title: "Sign Up", path: "/signUp" },
         { title: "Dashboard", path: `/` },
         { title: "Settings", path: `/` },
         { title: "Log out", path: `/` },
@@ -79,7 +73,7 @@ const Navbar = () => {
     const navigation = [
         { title: "Home", path: `/` },
         { title: "Services", path: `/` },
-        { title: "Gallery", path: `/` },
+        { title: "Gallery", path: `/gallery` },
         { title: "Events", path: `/` },
         { title: "Login", path: `/login` },
         { title: "Sign Up", path: `/signUp` },
@@ -121,7 +115,7 @@ const Navbar = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                             </svg>
                             <input
-                                className="w-full bg-transparent z-20 outline-none appearance-none placeholder-black text-white sm:w-auto"
+                                className="w-full bg-transparent z-20 outline-none appearance-none placeholder-black text-black sm:w-auto"
                                 type="text"
                                 placeholder="Search"
                             />

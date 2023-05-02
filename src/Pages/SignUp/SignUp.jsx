@@ -157,7 +157,7 @@ const SignUp = () => {
                                     </button>
                                 </form>
                             </div>
-                            <div className="text-center">
+                            <div className="text-center pb-6">
                                 <Link to="/login" className="hover:text-indigo-600">Forgot password?</Link>
                             </div>
                         </div>
