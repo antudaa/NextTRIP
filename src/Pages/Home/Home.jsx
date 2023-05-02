@@ -22,6 +22,9 @@ const Home = () => {
             {/* World Tour */} 
             <WorldTour />
             {/* Discover World */}
+            {/* Discover World */}
+            {/* Discover World */}
+            {/* Discover World */}
             <Discover />
             {/* Best Packages Home */}
             <BestPackagesHomePage />
