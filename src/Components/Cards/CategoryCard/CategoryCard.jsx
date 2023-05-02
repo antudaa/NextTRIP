@@ -7,18 +7,18 @@ const CategoryCard = ({ category }) => {
 	// console.log(category);
 
 	// Destructuring category
-	
+
 	const {
-		
+
 		img,
 		categoryName,
 		availablePackagePlaceName,
 		availablePackageQuantity,
 	} = category;
-	
 
-	const {data} = useGetToursByCategoryQuery(`${categoryName}`)
-	console.log(data);
+
+	const { data } = useGetToursByCategoryQuery(`${categoryName}`)
+	// console.log(data);
 
 
 	return (
