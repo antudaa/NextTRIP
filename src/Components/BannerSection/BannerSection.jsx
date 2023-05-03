@@ -14,7 +14,7 @@ const BannerSection = () => {
                 <img src='https://i.ibb.co/5kXJFpM/Login-Page-Background.jpg'
                     className="absolute top-0 lg:top-0 left-0 w-full sm:h-[70%] h-[70%] lg:h-full opacity-90 object-cover " />
                 <div className="space-y-5 z-30 mx-auto text-center">
-                    <h1 className=" text-2xl lg:text-4xl text-white font-extrabold mx-auto">
+                    <h1 className=" text-2xl lg:text-5xl text-white font-extrabold mx-auto">
                         Search Your Next <span>Trip</span>
                     </h1>
                     <p className="mx-auto xl:mx-0 capitalize text-center text-xl lg:text-2xl text-white">
