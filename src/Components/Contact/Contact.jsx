@@ -34,7 +34,7 @@ const Contact = () => {
         <main className="py-14">
             <div className="w-[90vw] mx-auto px-4 bg-[aliceblue] text-gray-600 md:px-8">
                 <div className="max-w-xxlg mx-auto gap-12 p-8 justify-between lg:flex lg:max-w-none">
-                    <div className="max-w-lg space-y-3">
+                    <div className="max-w-lg space-y-3 mx-auto md:mx-0">
                         <h3 className="text-indigo-600 font-semibold">
                             Contact
                         </h3>
@@ -59,7 +59,7 @@ const Contact = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="flex-1 mt-12 sm:max-w-lg lg:max-w-md">
+                    <div className="flex-1 mt-12 mx-auto md:mx-0 sm:max-w-lg lg:max-w-md">
                         <form
                             onSubmit={(e) => e.preventDefault()}
                             className="space-y-5"

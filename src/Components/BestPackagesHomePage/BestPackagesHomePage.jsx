@@ -60,14 +60,15 @@ const BestPackagesHomePage = () => {
 						className="carousel scroll-smooth relative p-4 flex items-center justify-start gap-4 overflow-x-auto"
 					>
 						{/* Mapping Data */}
-						{data?.map(
-							(tourData) => (
-								<EventTourCard
-									key={tourData._id}
-									tourData={tourData} />
-							)
+						{
+							data?.map(
+								(tourData) => (
+									<EventTourCard
+										key={tourData._id}
+										tourData={tourData} />
+								)
 
-						)}
+							)}
 					</div>
 				</div>
 			</div>
