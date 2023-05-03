@@ -4,12 +4,9 @@ import { useGetToursQuery } from "../../../Features/eventTour/eventTourApi";
 import { useGetToursByCategoryQuery } from "../../../Features/categoryApi/categoryApi";
 
 const CategoryCard = ({ category }) => {
-	// console.log(category);
 
 	// Destructuring category
-
 	const {
-
 		img,
 		categoryName,
 		availablePackagePlaceName,
@@ -49,6 +46,7 @@ const CategoryCard = ({ category }) => {
 					))
 				}
 				{/* Button For View The Destinations */}
+
 				{/* to={(`/tour-details/${_id}`)} */}
 				<Link to={(`/view-destination/${categoryName}`)} className="bg-white mt-4 hover:text-cyan-500 text-cyan-500 text-[12px] rounded-3xl py-2 px-5">VIEW DESTINATIONS</Link>
 			</div>

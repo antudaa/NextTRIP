@@ -103,7 +103,7 @@ const CategorySlider = () => {
 			{/* Card Slider */}
 			<div id="category-content" className='flex flex-wrap justify-around align-center gap-6'>
 				{
-					Categories?.map((category, i) => (
+					data?.map((category, i) => (
 						<div key={i}>
 							<CategoryCard
 								key={i}

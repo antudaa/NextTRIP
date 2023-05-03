@@ -24,7 +24,7 @@ const EventTourCard = ({ tourData }) => {
                 <div className="relative flex items-start justify-between p-4 sm:p-6 lg:p-8">
                     <div className="pt-16 text-white">
                         {/* Destination Name */}
-                        <h3 className="text-md font-bold">{placeName}</h3>
+                        <h3 className="text-xl font-semibold">{placeName}</h3>
                         {/* Location Name */}
                         <p className="text-sm">{location}</p>
                     </div>

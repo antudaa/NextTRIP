@@ -40,7 +40,7 @@ export const routes = createBrowserRouter([
             },
             {
                 path: '/tour-details/:id',
-                element: <TourDetails />
+                element: <TourDetails />,
             },
             {
                 path: '/view-destination/:category',
