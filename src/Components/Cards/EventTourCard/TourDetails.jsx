@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useTourByIdQuery } from "../../../Features/eventTour/eventTourApi";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const demoImage = [
 	`https://images.unsplash.com/photo-1546412414-e1885259563a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80`,
@@ -91,7 +91,7 @@ const TourDetails = () => {
 								</div>
 							</div>
 							<div className="flex justify-between mt-10">
-								<a href="#" className="inline-block capitalize font-semibold text-lg border-2 border-black rounded-full py-2 px-4 hover:bg-blue-500 hover:text-white hover:border-blue-500">book now</a>
+								<Link to="/booking" className="inline-block capitalize font-semibold text-lg border-2 border-black rounded-full py-2 px-4 hover:bg-blue-500 hover:text-white hover:border-blue-500">book now</Link>
 								<span className="cursor-pointer hover:text-gray-700 flex items-center text-gray-700">Cart</span>
 							</div>
 						</div>
