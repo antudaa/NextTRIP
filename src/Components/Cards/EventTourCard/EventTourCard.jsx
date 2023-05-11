@@ -68,8 +68,7 @@ const EventTourCard = ({ tourData }) => {
                             <p className="font-medium">{EventDuration}</p>
                         </div>
                     </div>
-                    {/* onClick={() => navigate(`/tour-details/${_id}`)} */}
-                    {/* to={(`/tour-details/${_id}`)} */}
+                    
                     {/* Button For Details & Book Now */}
                     <div className="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
                         <div className="mt-1.5 sm:mt-0">

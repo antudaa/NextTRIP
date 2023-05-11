@@ -31,7 +31,7 @@ const faqsList = [
 const FAQ = () => {
 
     return (
-        <section className="leading-relaxed w-[85vw] mt-12 mx-auto p-4 md:px-8">
+        <section className="leading-relaxed w-[85vw] my-20 mx-auto p-6 md:px-8 bg-slate-300">
             <div className="space-y-3 text-center">
                 <h1 className="text-3xl text-gray-800 font-semibold">
                     Why We Are The Best
@@ -40,7 +40,7 @@ const FAQ = () => {
                     Answered all frequently asked questions, Still confused? feel free to contact us.
                 </p>
             </div>
-            <div className="mt-14 gap-4 sm:grid sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-7 px-4 gap-5 sm:grid sm:grid-cols-2 lg:grid-cols-3">
                 {
                     faqsList.map((item, idx) => (
                         <FAQCards
