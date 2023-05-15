@@ -35,6 +35,9 @@ const Home = () => {
             {/* Discover World */}
             <Discover />
             {/* Best Packages Home */}
+            {/* Best Packages Home */}
+            {/* Best Packages Home */}
+            {/* Best Packages Home */}
             <BestPackagesHomePage />
             {/* Testimonial Section */}
             <Testimonial />
