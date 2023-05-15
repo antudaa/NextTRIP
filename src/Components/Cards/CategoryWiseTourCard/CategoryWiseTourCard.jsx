@@ -1,5 +1,6 @@
 import React from 'react';
 import cartIcon from "../../../assets/Icons/wishlist.png";
+import { Link } from 'react-router-dom';
 
 
 const CategoryWiseTourCard = ({ tour }) => {
@@ -51,7 +52,7 @@ const CategoryWiseTourCard = ({ tour }) => {
                         </div>
                         <p className="leading-relaxed">
                             {description.slice(0, 220)}
-                            .... <small className='cursor-pointer'>see more</small> </p>
+                            .... <small className='cursor-pointer text-blue-600'>see more</small> </p>
                         <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
                             <div className="flex">
                                 <span className="mr-3">{EventDuration}</span>
@@ -77,7 +78,9 @@ const CategoryWiseTourCard = ({ tour }) => {
                             {/* Go To Details Page Button  */}
                             <button className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Details</button>
                             {/* Book The Tour Button  */}
-                            <button className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Book Now</button>
+                            
+                            <Link to="/booking" className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Book Now</Link>
+                            
                             <button className="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
                                 <img src={cartIcon} className="w-5 h-5" alt="" />
                             </button>
