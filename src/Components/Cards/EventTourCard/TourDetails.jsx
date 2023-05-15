@@ -1,30 +1,23 @@
 import React, { useState } from "react";
 import { useTourByIdQuery } from "../../../Features/eventTour/eventTourApi";
 import { Link, useParams } from "react-router-dom";
-
-const demoImage = [
-	`https://images.unsplash.com/photo-1546412414-e1885259563a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80`,
-	`https://images.unsplash.com/photo-1512632578888-169bbbc64f33?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80`,
-	`https://images.unsplash.com/photo-1628859017536-c2f1d69f3c84?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=637&q=80`,
-	`https://c4.wallpaperflare.com/wallpaper/880/574/451/landscape-railay-beach-nature-thailand-wallpaper-preview.jpg`,
-	`https://c4.wallpaperflare.com/wallpaper/827/390/338/landscape-nature-beach-resort-wallpaper-preview.jpg`
-]
+import cartIcon from '../../../assets/Icons/add-cart.png';
 
 const TourDetails = () => {
 
 	// Corner Icon URL
 	<style>@import url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css);</style>
 
-	const { id } = useParams()
-	const { data, isLoading, isError } = useTourByIdQuery(id)
-	console.log(data);
+	const { id } = useParams();
+	const { data, isLoading, isError } = useTourByIdQuery(id);
+	// console.log(data);
 
 	// Destructuring Details 
 	const { _id, CoverImage, EventDuration, images, location, placeName, StartDate
 		, EndDate, pricePerPerson, joinedMembers, rating, title, description } = data || {};
 
 	// Changing Images Via useState 
-	const [image, setImage] = useState(CoverImage ? CoverImage : CoverImage);
+	const [image, setImage] = useState(CoverImage);
 
 	return (
 		<div>
@@ -92,7 +85,9 @@ const TourDetails = () => {
 							</div>
 							<div className="flex justify-between mt-10">
 								<Link to="/booking" className="inline-block capitalize font-semibold text-lg border-2 border-black rounded-full py-2 px-4 hover:bg-blue-500 hover:text-white hover:border-blue-500">book now</Link>
-								<span className="cursor-pointer hover:text-gray-700 flex items-center text-gray-700">Cart</span>
+								<button className="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
+									<img src={cartIcon} className="w-5 h-5" alt="" />
+								</button>
 							</div>
 						</div>
 					</div>

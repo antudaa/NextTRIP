@@ -31,8 +31,8 @@ const Contact = () => {
     ]
 
     return (
-        <main className="py-14 bg-slate-400">
-            <div className="w-[90vw] mx-auto px-4 bg-[#e1e6ec] text-gray-600 md:px-8 rounded-md">
+        <main className="py-14">
+            <div className="w-[90vw] mx-auto px-4 border-cyan-100 border-2 text-gray-600 md:px-8 rounded-md">
                 <div className="max-w-xxlg mx-auto gap-12 p-8 justify-between lg:flex lg:max-w-none">
                     <div className="max-w-lg space-y-3 mx-auto md:mx-0">
                         <h3 className="text-indigo-600 font-semibold">

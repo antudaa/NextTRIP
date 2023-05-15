@@ -36,7 +36,7 @@ const BannerCards = () => {
                     {
                         integrations.map((item, idx) => (
                             <div key={idx} className="w-[100px] z-20 p-4 rounded-md shadow-md mx-auto backdrop-blur-sm bg-white/30">
-                                <img src={item.icon} alt="" className="object-cover z-50 object-center w-[60px] rounded-md h-[60px] dark:bg-gray-500" />
+                                <img src={item.icon} alt="" className="object-cover z-50 object-center w-[60px] rounded-md h-[60px] " />
                                 <h3 className='text-center z-50 mt-2 text-white'>{item.title}</h3>
                             </div>
                         ))

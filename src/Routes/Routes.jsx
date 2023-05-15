@@ -8,6 +8,7 @@ import BestPackagesHomePage from "../Components/BestPackagesHomePage/BestPackage
 import TourDetails from "../Components/Cards/EventTourCard/TourDetails";
 import TourPackage from "../Components/Cards/TourPackage/TourPackage";
 import GalleryPage from "../Pages/GalleryPage/GalleryPage";
+import CategoryWiseTour from "../Components/CategoryWiseTour/CategoryWiseTour";
 import Booking from "../Components/Booking/Booking";
 
 export const routes = createBrowserRouter([
@@ -48,8 +49,12 @@ export const routes = createBrowserRouter([
                 element: <TourPackage />
             },
             {
+                path: '/tours/:category',
+                element: <CategoryWiseTour />
+            },
+            {
                 path: '/booking',
-                element: <Booking/>
+                element: <Booking />
             },
         ]
     },

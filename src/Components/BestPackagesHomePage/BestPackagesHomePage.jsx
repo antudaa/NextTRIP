@@ -21,10 +21,9 @@ const BestPackagesHomePage = () => {
 
 	return (
 		<div className="container w-[90%] max-w-screen-xxl relative mx-auto">
-			<div className="lg:text-4xl md:text-3xl text-2xl font-bold text-black pl-6 text-start my-16">
-				<div className="container md:ml-20 md:w-[80%] ml-6 w-[90%] lg:ml-16 relative lg:w-[95%]">
-					<div className="">
-					
+			<div className="lg:text-4xl md:text-3xl text-2xl font-bold text-black pl-6 text-start my-6">
+				<div className="container md:ml-32 md:w-[80%] ml-2 w-[90%] lg:ml-16 relative lg:w-[90%]">
+					<div className="lg:text-5xl md:text-3xl text-2xl font-semibold text-black pl-6 text-start my-6">
 						{/* Header Text For Best Packages Home Section */}
 						<h2 className="text-gray-700 text-2xl md:text-2xl lg:text-4xl font-bold capitalize my-4">
 							Find Popular
@@ -36,7 +35,7 @@ const BestPackagesHomePage = () => {
 					</div>
 
 					{/* Next Previous Button To Control Slider */}
-					<div className="absolute right-0 z-10 top-6 sm:top-6">
+					<div className="absolute right-0 z-10 top-16 sm:top-4">
 						{/* Button For Slide Back */}
 						<button
 							onClick={scrollBack}
