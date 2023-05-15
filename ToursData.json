@@ -3,8 +3,9 @@
          "location": "French Polynesia",
         "placeName": "Bora Bora, Island",
         "category": [
-            "island",
+            "Islands",
             "seabeach",
+            "beach",
             "france"
         ],
         "title": "A colossal cosmos encircled by a mystique lagoon",
@@ -45,7 +46,7 @@
         "category": [
             "beach",
             "maldives",
-            "island"
+            "Islands"
         ],
         "title": "A Tropical Haven For Honeymooners",
         "pricePerPerson": 200,
@@ -86,7 +87,7 @@
         "category": [
             "thailand",
             "phiphi",
-            "island"
+            "Islands"
         ],
         "title": "Island Paradise for the Beach Lover",
         "pricePerPerson": 170,
@@ -126,7 +127,7 @@
         "category": [
             "thailand",
             "kohyaonai",
-            "island"
+            "Islands"
         ],
         "title": "A Sight Off the Beaten Track",
         "pricePerPerson": 190,
@@ -254,7 +255,7 @@
         "category": [
             "historicalplace",
             "machupichu",
-            "historicalplace"
+            "historicalPlaces"
         ],
         "title": "Experience The Natural Beauty & Culture Of Peru",
         "pricePerPerson": 210,
@@ -293,6 +294,7 @@
         "placeName": "Victoria Falls, Zambia",
         "category": [
             "waterfall",
+            "waterFalls",
             "victoriafalls",
             "zambia",
             "nature"
@@ -376,7 +378,8 @@
         "location": "Niagara Falls",
         "placeName": "Niagara Falls, Canada/USA",
         "category": [
-            "waterfalls",
+            "waterfall",
+            "waterFalls",
             "nature",
             "canada",
             "niagarafalls"
@@ -420,7 +423,8 @@
             "airbaloon",
             "skyview",
             "turkey",
-            "cappadocia"
+            "cappadocia",
+            "cities"
         ],
         "title": "A Paradise for the Nature Lovers",
         "pricePerPerson": 170,
@@ -540,7 +544,7 @@
         "location": "Raja Ampat Island",
         "placeName": "Raja Ampat Islands, Indonesia",
         "category": [
-            "island",
+            "Islands",
             "indonesia",
             "nature",
             "beach"
@@ -583,7 +587,9 @@
         "category": [
             "nature",
             "valley",
-            "waterfall"
+            "waterfall",
+            "waterFalls",
+            "caves"
         ],
         "title": "Island Paradise for the Beach Lover",
         "pricePerPerson": 170,
@@ -667,7 +673,7 @@
             "cambodia",
             "mistry",
             "historical",
-            "historicalplace"
+            "historicalPlaces"
         ],
         "title": "A Paradise for the Historical Placae Lovers",
         "pricePerPerson": 170,
@@ -712,7 +718,7 @@
             "caves",
             "vatnajokull",
             "cave",
-            "island"
+            "Islands"
         ],
         "title": "Cave Paradise for the Cave Lovers",
         "pricePerPerson": 170,
@@ -793,7 +799,7 @@
         "category": [
             "pyramid",
             "desert",
-            "historicalplace"
+            "historicalPlaces"
         ],
         "title": "A Paradise for the Pyramids & History Lovers",
         "pricePerPerson": 170,

@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useGetToursQuery } from "../../../Features/eventTour/eventTourApi";
-import { useGetToursByCategoryQuery } from "../../../Features/categoryApi/categoryApi";
 
 const CategoryCard = ({ category }) => {
 
@@ -14,8 +13,7 @@ const CategoryCard = ({ category }) => {
 	} = category;
 
 
-	const { data } = useGetToursByCategoryQuery(`${categoryName}`)
-	// console.log(data);
+	const { data } = useGetToursQuery(`${categoryName}`);
 
 
 	return (
@@ -48,7 +46,7 @@ const CategoryCard = ({ category }) => {
 				{/* Button For View The Destinations */}
 
 				{/* to={(`/tour-details/${_id}`)} */}
-				<Link to={(`/view-destination/${categoryName}`)} className="bg-white mt-4 hover:text-cyan-500 text-cyan-500 text-[12px] rounded-3xl py-2 px-5">VIEW DESTINATIONS</Link>
+				<Link to={(`/tours/${categoryName}`)} className="bg-white mt-4 hover:text-cyan-500 text-cyan-500 text-[12px] rounded-3xl py-2 px-5">VIEW DESTINATIONS</Link>
 			</div>
 		</div>
 	);

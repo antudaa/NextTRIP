@@ -3,13 +3,11 @@ import { useGetToursByCategoryQuery } from "../../../Features/categoryApi/catego
 
 const TourPackage = () => {
     // const {nature} = useParams()
-    // const {data} = useGetToursByCategoryQuery("france")
+    const {data} = useGetToursByCategoryQuery("france")
 
-    // console.log(data);
+    console.log(data);
 	return (
 		<div>
-
-            
 			<div className="card card-compact w-96 bg-base-100 shadow-xl">
 				<figure>
 					<img

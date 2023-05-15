@@ -23,7 +23,7 @@ const BestPackagesHomePage = () => {
 	return (
 		<div className="container w-[90%] max-w-screen-xxl relative mx-auto">
 			<div className="lg:text-4xl md:text-3xl text-2xl font-bold text-black pl-6 text-start my-6">
-				<div className="container md:ml-32 md:w-[80%] ml-6 w-[90%] lg:ml-44 relative lg:w-[85%]">
+				<div className="container md:ml-32 md:w-[80%] ml-2 w-[90%] lg:ml-16 relative lg:w-[90%]">
 					<div className="lg:text-5xl md:text-3xl text-2xl font-semibold text-black pl-6 text-start my-6">
 						{/* Header Text For Best Packages Home Section */}
 						<h2>Find Popular Destinations </h2>
