@@ -3,7 +3,7 @@ import cartIcon from "../../../assets/Icons/wishlist.png";
 
 
 const CategoryWiseTourCard = ({ tour }) => {
-    console.log(tour)
+    // console.log(tour)
 
     const {
         CoverImage,

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useTourByIdQuery } from "../../../Features/eventTour/eventTourApi";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import cartIcon from '../../../assets/Icons/add-cart.png';
 
 const TourDetails = () => {
 
@@ -16,7 +17,7 @@ const TourDetails = () => {
 		, EndDate, pricePerPerson, joinedMembers, rating, title, description } = data || {};
 
 	// Changing Images Via useState 
-	const [image, setImage] = useState(`${data ? { CoverImage } : ""}`);
+	const [image, setImage] = useState(CoverImage);
 
 	return (
 		<div>
@@ -83,8 +84,10 @@ const TourDetails = () => {
 								</div>
 							</div>
 							<div className="flex justify-between mt-10">
-								<a href="#" className="inline-block capitalize font-semibold text-lg border-2 border-black rounded-full py-2 px-4 hover:bg-blue-500 hover:text-white hover:border-blue-500">book now</a>
-								<span className="cursor-pointer hover:text-gray-700 flex items-center text-gray-700">Cart</span>
+								<Link to="/booking" className="inline-block capitalize font-semibold text-lg border-2 border-black rounded-full py-2 px-4 hover:bg-blue-500 hover:text-white hover:border-blue-500">book now</Link>
+								<button className="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
+									<img src={cartIcon} className="w-5 h-5" alt="" />
+								</button>
 							</div>
 						</div>
 					</div>

@@ -6,7 +6,6 @@ import data from "../../../ToursData.json";
 import { useGetToursQuery } from "../../Features/eventTour/eventTourApi";
 
 const BestPackagesHomePage = () => {
-
 	// Fetching Data From Server
 	const { data, isLoading, isError } = useGetToursQuery();
 	// console.log(data);
@@ -26,11 +25,17 @@ const BestPackagesHomePage = () => {
 				<div className="container md:ml-32 md:w-[80%] ml-2 w-[90%] lg:ml-16 relative lg:w-[90%]">
 					<div className="lg:text-5xl md:text-3xl text-2xl font-semibold text-black pl-6 text-start my-6">
 						{/* Header Text For Best Packages Home Section */}
-						<h2>Find Popular Destinations </h2>
+						<h2 className="text-gray-700 text-2xl md:text-2xl lg:text-4xl font-bold capitalize my-4">
+							Find Popular
+							<span className="underline text-cyan-400 ml-2">
+								<span className="text-gray-700">Destinations</span>
+							</span>
+						</h2>
+						{/* <h2>Find Popular Destinations </h2> */}
 					</div>
 
 					{/* Next Previous Button To Control Slider */}
-					<div className="absolute right-0 z-10 top-6 sm:top-6">
+					<div className="absolute right-0 z-10 top-16 sm:top-4">
 						{/* Button For Slide Back */}
 						<button
 							onClick={scrollBack}
@@ -60,15 +65,9 @@ const BestPackagesHomePage = () => {
 						className="carousel scroll-smooth relative p-4 flex items-center justify-start gap-4 overflow-x-auto"
 					>
 						{/* Mapping Data */}
-						{
-							data?.map(
-								(tourData) => (
-									<EventTourCard
-										key={tourData._id}
-										tourData={tourData} />
-								)
-
-							)}
+						{data?.map((tourData) => (
+							<EventTourCard key={tourData._id} tourData={tourData} />
+						))}
 					</div>
 				</div>
 			</div>

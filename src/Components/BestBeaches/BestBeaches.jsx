@@ -38,8 +38,8 @@ const BestBeaches = () => {
 		<div className="px-4 pt-16 mx-auto max-w-screen-xxl w-[90%] md:px-24 lg:px-8 lg:pt-20">
 			<div className="grid gap-10 lg:grid-cols-2">
 				<div className="lg:pr-10 ">
-					<h5 className="mb-4 text-4xl font-extrabold leading-none">
-						Our Best Deal
+					<h5 className="mb-4 text-4xl font-bold leading-none text-gray-700">
+						Our Best <span className="underline text-cyan-400"><span className="text-gray-700">Deal</span></span>
 					</h5>
 					{/* Description About Deal*/}
 					<p className="mb-6 text-gray-900">

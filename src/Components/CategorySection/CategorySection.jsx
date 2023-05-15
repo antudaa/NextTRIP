@@ -6,11 +6,11 @@ const CategorySection = () => {
 
 
     return (
-        <div className='px-8 py-2 mt-8 mb-8'>
+        <div className='px-8 py-2 mt-16 md:mt-52 mb-8'>
             <div className='mx-auto w-[90%] text-center md:text-start'>
                 <div className='pt-2 lg:pt-10 xl:pt-16'>
                     {/* Header Text For Category Section */}
-                    <h2 className='text-gray-700 z-40 mt-2 md:mt-32 lg:mt-52 text-2xl md:text-2xl lg:text-4xl font-bold capitalize'>
+                    <h2 className='text-gray-700 z-40 mt-2  text-2xl md:text-2xl lg:text-4xl font-bold capitalize'>
                         SELECT 
                         <span className='underline text-cyan-400 ml-2'><span className='text-gray-700'>
                             CATEGORY

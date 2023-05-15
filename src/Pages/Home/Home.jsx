@@ -13,6 +13,8 @@ import GoToTop from '../../Components/GoToTop/GoToTop';
 import Testimonial from '../../Components/Testimonial/Testimonial';
 import State from '../../Components/State/State';
 
+//https://www.myglobalviewpoint.com/best-travel-sites/
+
 const Home = () => {
 
     return (

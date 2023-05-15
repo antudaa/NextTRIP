@@ -3,10 +3,9 @@ import CategoryCard from "../Cards/CategoryCard/CategoryCard";
 import { useGetCategoriesQuery } from "../../Features/categoryApi/categoryApi";
 
 
-
 const CategorySlider = () => {
 
-	const { data, isLoading, isError } = useGetCategoriesQuery()
+	const { data, isLoading, isError } = useGetCategoriesQuery();
 
 	return (
 		<div className='relative my-10 mx-auto w-[90%]'>
