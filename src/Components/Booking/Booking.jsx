@@ -64,38 +64,34 @@ const Booking = () => {
                                 >
                                     <div>
                                         <label className="font-medium">
-                                            Email
+                                            From
                                         </label>
                                         <input
-                                            {...register("email",
-                                                { required: "Email Address is required" })}
-                                            aria-invalid={errors.email ? "true" : "false"}
-                                            type="email" placeholder="E-mail" className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                                            {...register("from",
+                                                { required: "Where to go required" })}
+                                            aria-invalid={errors.from ? "true" : "false"}
+                                            type="text" placeholder="E-mail" className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                                         />
                                         {/* Error Message  */}
-                                        {errors.email && <p className='text-red-500' role="alert">{errors.email?.message}</p>}
+                                        {errors.from && <p className='text-red-500' role="alert">{errors.from?.message}</p>}
                                     </div>
                                     <div>
                                         <label className="font-medium">
-                                            Password
+                                            To
                                         </label>
                                         <div className="relative w-full mt-2">
                                            
                                             <input
-                                                type=''
-                                                placeholder="Password"
+                                                type='text'
+                                                // placeholder="Password"
                                                 // Password Validation 
-                                                {...register("password", {
-                                                    required: "Password must be 8 character or longer.",
-                                                    minLength: { value: 8, message: "Password must have 8 character or long." },
-                                                    pattern: { value: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])/, message: 'Password must have uppercase, number and special characters' }
-
-                                                })}
+                                                {...register("to",
+                                                { required: "Where to go required" })}
                                                 className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                                             />
                                         </div>
                                         {/* Error Message  */}
-                                        {errors.password && <p className='text-red-500' role="alert">{errors.password?.message}</p>}
+                                        {errors.to && <p className='text-red-500' role="alert">{errors.to?.message}</p>}
                                     </div>
                                     {/* Submit Button  */}
                                     <button type="submit"
