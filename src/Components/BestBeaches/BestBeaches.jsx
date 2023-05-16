@@ -1,5 +1,6 @@
 import React from "react";
 import BeachVideo from "../../assets/Videos/video-section.mp4";
+import { Link } from "react-router-dom";
 
 const BestBeaches = () => {
 	// Set the date we're counting down to
@@ -60,9 +61,9 @@ const BestBeaches = () => {
 					<hr className="mb-5 border-gray-300" />
 					{/* Book Now Button */}
 					<div className="flex items-center space-x-4">
-						<button className="btn bg-cyan-400 px-8 hover:bg-cyan-500 text-white border-none rounded-full">
+						<Link to='/booking' className="btn bg-cyan-400 px-8 hover:bg-cyan-500 text-white border-none rounded-full">
 							Book Now
-						</button>
+						</Link>
 					</div>
 				</div>
 				<div className="relative">

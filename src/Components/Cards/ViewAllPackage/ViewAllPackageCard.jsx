@@ -24,7 +24,7 @@ const ViewAllPackageCard = ({allPack}) => {
         <div style={{ "backgroundColor": "rgba(0, 0, 0, 0)" }}>
             
             <div className="container px-5 py-24 mx-auto" style={{ "cursor": "auto" }}>
-            <h3 className='text-center text-3xl my-8 uppercase font-bold text-slate-700'>{category[0]}</h3>
+            <h3 className='text-center text-3xl my-8 uppercase font-bold text-sky-500'>{category[0]}</h3>
                 <div className="lg:w-4/5 mx-auto flex flex-wrap">
                     <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src={CoverImage} style={{ "cursor": "auto" }} />
                     <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0" style={{ "cursor": "auto" }}>
