@@ -22,7 +22,7 @@ const NextHoliday = () => {
                             </span>
                         </span>
                     </h1>
-                    <Link className="btn px-10 bg-white hover:bg-white hover:text-sky-500 text-pink-500 ml-20 mt-8 rounded-3xl">
+                    <Link to="/viewall" className="btn px-10 bg-white hover:bg-white hover:text-sky-500 text-pink-500 ml-20 mt-8 rounded-3xl">
                         View all Package 
                     </Link>
                 </div>

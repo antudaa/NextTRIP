@@ -10,6 +10,8 @@ import TourPackage from "../Components/Cards/TourPackage/TourPackage";
 import GalleryPage from "../Pages/GalleryPage/GalleryPage";
 import CategoryWiseTour from "../Components/CategoryWiseTour/CategoryWiseTour";
 import Booking from "../Components/Booking/Booking";
+import ViewAllPackageCard from "../Components/Cards/ViewAllPackage/ViewAllPackageCard";
+import ViewAllPackage from "../Components/Cards/ViewAllPackage/ViewAllPackage";
 
 export const routes = createBrowserRouter([
     {
@@ -51,6 +53,10 @@ export const routes = createBrowserRouter([
             {
                 path: '/tours/:category',
                 element: <CategoryWiseTour />
+            },
+            {
+                path: '/viewall',
+                element: <ViewAllPackage></ViewAllPackage>
             },
             {
                 path: '/booking',

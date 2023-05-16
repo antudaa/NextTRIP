@@ -10,7 +10,6 @@ const categoryApi = apiSlice.injectEndpoints({
         getToursByCategory: builder.query({
             query: (category) => ({
                 url: `/tours/${category}`
-
             })
         }),
     })
