@@ -31,7 +31,7 @@ const faqsList = [
 const FAQ = () => {
 
     return (
-        <section className="leading-relaxed w-[85vw] border-cyan-100 border-2 my-20 mx-auto p-6 md:px-8 ">
+        <section className="leading-relaxed w-[85vw] shadow-xl my-20 mx-auto p-6 md:px-8 ">
             <div className="space-y-3 text-center">
                 <h1 className="text-3xl text-gray-800 font-semibold">
                     Why We Are The Best

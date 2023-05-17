@@ -15,7 +15,7 @@ const CategoryWiseTour = () => {
                 data?.map((tour) => (
                     <div
                         key={tour._id}
-                        className=''>
+                        className='my-24'>
                         <CategoryWiseTourCard tour={tour} />
                     </div>
                 ))

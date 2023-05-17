@@ -20,7 +20,7 @@ const CategoryWiseTourCard = ({ tour }) => {
 
 
     return (
-        <div style={{ "backgroundColor": "rgba(0, 0, 0, 0)" }}>
+        <div className='border-[none] borderwid w-[70%] mx-auto rounded-xl mb-6 shadow-xl' style={{ "backgroundColor": "rgba(0, 0, 0, 0)" }}>
             <div className="container px-5 py-24 mx-auto" style={{ "cursor": "auto" }}>
                 <div className="lg:w-4/5 mx-auto flex flex-wrap">
                     <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src={CoverImage} style={{ "cursor": "auto" }} />

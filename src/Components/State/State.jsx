@@ -2,7 +2,7 @@ import React from 'react';
 
 const State = () => {
     return (
-        <div className="px-4 py-16 z-40 mx-auto w-[90%] md:px-24 text-sky-500 lg:px-8 lg:py-16 shadow-xl shadow-sky-200 my-16 rounded-md">
+        <div className="px-4 py-16 z-40 mx-auto w-[90%] md:px-24 text-sky-500 lg:px-8 lg:py-16 shadow-xl shadow-sky-100 my-16 rounded-md">
             <div className="grid grid-cols-2 row-gap-8 gap-10 md:grid-cols-4">
                 <div className="text-center">
                     <h6 className="text-xl md:text-4xl font-bold text-deep-purple-accent-400">
