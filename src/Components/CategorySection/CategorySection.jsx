@@ -11,7 +11,7 @@ const CategorySection = () => {
                 <div className='pt-2 lg:pt-10 xl:pt-16'>
                     {/* Header Text For Category Section */}
                     <h2 className='text-gray-700 z-40 mt-2  text-2xl md:text-2xl lg:text-4xl font-bold capitalize'>
-                        SELECT 
+                        SELECT
                         <span className='underline text-cyan-400 ml-2'><span className='text-gray-700'>
                             CATEGORY
                         </span></span>
@@ -19,6 +19,7 @@ const CategorySection = () => {
                 </div>
             </div>
             <CategorySlider className="py-4" />
+
         </div>
     );
 };
