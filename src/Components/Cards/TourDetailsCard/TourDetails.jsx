@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useTourByIdQuery } from "../../../Features/eventTour/eventTourApi";
 import { Link, useParams } from "react-router-dom";
 import cartIcon from "../../../assets/Icons/add-cart.png";
@@ -12,7 +12,6 @@ const TourDetails = () => {
 
 	const { id } = useParams();
 	const { data, isLoading, isError } = useTourByIdQuery(id);
-	// console.log(data);
 
 	// Destructuring Details
 	const {
@@ -31,8 +30,18 @@ const TourDetails = () => {
 		description,
 	} = data || {};
 
-	// Changing Images Via useState
-	const [image, setImage] = useState(CoverImage);
+
+	// UseState to set The cover Image 
+	const [image, setImage] = useState("");
+
+	// Set the value of setImage Inside use Effect to set the image data after rendering all the necessary data.
+	useEffect(() => {
+		if (data) {
+			setImage(data.CoverImage)
+		}
+		// Giving data as a dependency so that after render data it will reset the image data 
+	}, data);
+
 
 	return (
 		<div>

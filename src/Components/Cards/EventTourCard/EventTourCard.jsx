@@ -1,7 +1,7 @@
 import React from 'react';
 import DurationIcon from "../../../assets/Icons/return-to-the-past.png";
 import starRating from "../../../assets/Icons/star.png";
-import bookIcon from "../../../assets/Icons/click.png";
+import addCart from "../../../assets/Icons/add-cart.png";
 import { Link, useNavigate } from 'react-router-dom';
 
 
@@ -42,7 +42,7 @@ const EventTourCard = ({ tourData }) => {
                         </div>
                         {/* Ratings */}
                         <span
-                            className="inline-flex items-center gap-0.5 rounded-full bg-black px-2 py-1 text-xs font-semibold text-white"
+                            className="inline-flex items-center gap-0.5 rounded-full bg-sky-200 px-2 py-1 text-xs font-semibold text-black"
                         >   {rating}
                             {/* StarRating Icon */}
                             <img className='h-4 w-4 ml-2' src={starRating} alt="" />
@@ -72,12 +72,12 @@ const EventTourCard = ({ tourData }) => {
                     {/* Button For Details & Book Now */}
                     <div className="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
                         <div className="mt-1.5 sm:mt-0">
-                            <Link to={(`/tour-details/${_id}`)}  className='px-4 py-1 bg-gradient-to-r from-cyan-300 to-blue-500 rounded-full border text-sm'>DETAILS</Link>
+                            <Link to={(`/tour-details/${_id}`)}  className='px-4 py-1 bg-gradient-to-r from-cyan-300 to-sky-400 rounded-full border text-sm'>DETAILS</Link>
                         </div>
                     </div>
                     <div className="sm:shrink-0 sm:items-center">
                         {/* Book Item Icon */}
-                        <img className="h-8 w-8 cursor-pointer text-indigo-700" src={bookIcon} alt="" />
+                        <img className="h-8 w-8 cursor-pointer text-indigo-700" src={addCart} alt="" />
                     </div>
                 </div>
             </div>
