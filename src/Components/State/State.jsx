@@ -7,25 +7,25 @@ const State = () => {
 			<div className="grid grid-cols-2 row-gap-8 gap-10 md:grid-cols-4">
 				<div className="text-center">
 					<h6 className="text-xl md:text-4xl font-bold text-deep-purple-accent-400">
-						<CountUp start={0} end={10} delay={0} duration={8}>
-							{({ countUpRef }) => (
-								<div>
-									<span ref={countUpRef} />
-								</div>
-							)}
-						</CountUp>
+
+                        {/* to count up number of years */}
+						<CountUp end={10} delay={0} duration={8}/>
+							
+						
 						Years
 					</h6>
 					<p className="font-bold">Service</p>
 				</div>
 				<div className="text-center">
 					<h6 className="text-xl md:text-4xl font-bold text-deep-purple-accent-400">
+                        {/* count up the travellers */}
 						<CountUp end={2300} duration={8} delay={0} /> +
 					</h6>
 					<p className="font-bold">Happy Travellers</p>
 				</div>
 				<div className="text-center">
 					<h6 className="text-xl md:text-4xl font-bold text-deep-purple-accent-400">
+                        {/* count up total reviews */}
 						<CountUp end={1200} duration={8} delay={0} decimals={1}/>
 						K+
 					</h6>
@@ -33,6 +33,7 @@ const State = () => {
 				</div>
 				<div className="text-center">
 					<h6 className="text-xl md:text-4xl font-bold text-deep-purple-accent-400">
+                        {/* count up the Subscribers */}
 						<CountUp end={2000} duration={8} decimals={2} /> K+
 					</h6>
 					<p className="font-bold">Subscribers</p>
