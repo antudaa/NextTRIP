@@ -17,7 +17,7 @@ const CategoryCard = ({ category }) => {
 
 
 	return (
-		<div className="shadow-md duration-500 hover:shadow-xl mx-auto relative group opacity-90 flex rounded-md justify-center items-center h-[320px] w-[300px]">
+		<div className="shadow-xl duration-500 hover:shadow-xl mx-auto relative group opacity-90 flex rounded-md justify-center items-center h-[320px] w-[300px]">
 			{/* Background Image For Category Card */}
 			<img
 				className="object-center object-cover rounded-md h-[320px] w-[300px]"

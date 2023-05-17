@@ -5,11 +5,11 @@ import SignUp from "../Pages/SignUp/SignUp";
 import Login from "../Pages/Login/Login";
 import ErrorPage from "../Pages/Error/ErrorPage";
 import BestPackagesHomePage from "../Components/BestPackagesHomePage/BestPackagesHomePage";
-import TourDetails from "../Components/Cards/EventTourCard/TourDetails";
 import GalleryPage from "../Pages/GalleryPage/GalleryPage";
 import CategoryWiseTour from "../Components/CategoryWiseTour/CategoryWiseTour";
 import Booking from "../Components/Booking/Booking";
 import ViewAllPackage from "../Components/Cards/ViewAllPackage/ViewAllPackage";
+import TourDetails from "../Components/Cards/TourDetailsCard/TourDetails";
 
 export const routes = createBrowserRouter([
 	{

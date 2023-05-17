@@ -166,7 +166,7 @@ const TourDetails = () => {
 							<div className="flex justify-between mt-10">
 								<Link
 									to="/booking"
-									className="inline-block capitalize font-semibold text-lg border-2 border-black rounded-full bg-cyan-400 text-white py-2 px-4 hover:bg-blue-500 hover:text-white hover:border-blue-500"
+									className="inline-block capitalize font-semibold text-lg border-[none] rounded-full bg-cyan-400 text-white py-2 px-4 hover:bg-blue-500 hover:text-white hover:border-blue-500"
 								>
 									book now
 								</Link>
@@ -183,8 +183,8 @@ const TourDetails = () => {
 			<div className="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10">
 				<div>
 					<a
-						title="Buy me a beer"
-						href="https://www.buymeacoffee.com/scottwindon"
+						title="Book your favourit tour"
+						href="/"
 						target="_blank"
 						className="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
 					>

@@ -26,13 +26,13 @@ const Contact = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                 </svg>
             ,
-            contact: "Dhanmondi, Dhaka, Bangladesh."
+            contact: "Dhanmondi, Dhaka, Bangladesh." 
         },
     ]
 
     return (
         <main className="py-14">
-            <div className="w-[90vw] mx-auto px-4 border-cyan-100 border-2 text-gray-600 md:px-8 rounded-md">
+            <div className="w-[85vw] mx-auto px-4 shadow-xl text-gray-600 md:px-8 rounded-md">
                 <div className="max-w-xxlg mx-auto gap-12 p-8 justify-between lg:flex lg:max-w-none">
                     <div className="max-w-lg space-y-3 mx-auto md:mx-0">
                         <h3 className="text-indigo-600 font-semibold">

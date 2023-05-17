@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const NewSletter = () => {
 
     return (
-        <section className="py-14 w-[90%] mx-auto">
+        <section className="py-14 w-[90%] mx-auto ">
             <div
                 // Background Image For NewSletter 
                 style={{ backgroundImage: `url(https://c4.wallpaperflare.com/wallpaper/880/574/451/landscape-railay-beach-nature-thailand-wallpaper-preview.jpg)` }}
