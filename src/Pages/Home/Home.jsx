@@ -28,6 +28,9 @@ const Home = () => {
             {/* State */}
             <State />
             {/* Best Beaches */}
+            {/* Best Beaches */}
+            {/* Best Beaches */}
+            {/* Best Beaches */}
             
             <BestBeaches />
             {/* World Tour */}
