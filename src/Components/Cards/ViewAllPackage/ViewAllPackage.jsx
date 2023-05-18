@@ -43,7 +43,7 @@ const ViewAllPackage = () => {
 						<button type="button" className="control outline" onClick={() => filterTourPackages("beach")}>Beach</button>
 						<button type="button" className="control outline" onClick={() => filterTourPackages("waterfall")}>Waterfall</button>
 						<button type="button" className="control outline" onClick={() => filterTourPackages("desert")}>Desert</button>
-						<button type="button" className="control outline" onClick={() => filterTourPackages("desert")}>Desert</button>
+						
 						<button type="button" className="control outline" onClick={() => filterTourPackages("cities")}>Cities</button>
 						<button type="button" className="control outline" onClick={() => filterTourPackages("pyramid")}>Pyramids</button>
 						<button type="button" className="control outline" onClick={() => filterTourPackages("bali")}>Bali</button>

@@ -3,7 +3,7 @@ import toast from "react-hot-toast";
 import { useForm } from 'react-hook-form';
 import logo from "../../assets/images/Logo.png";
 import { Link } from 'react-router-dom';
-import loginBackground from "../../assets/Videos/LoginBackground.mp4";
+import loginBackground from "../../assets/Videos/islands-2119.mp4";
 
 
 const Login = () => {

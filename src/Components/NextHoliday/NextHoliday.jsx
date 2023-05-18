@@ -6,7 +6,7 @@ const NextHoliday = () => {
 
     return (
         // Background Image
-        <div className="hero h-96 bg-no-repeat shadow-2xl shadow-sky-200 bg-cover w-full" style={{ backgroundImage: `url(${img})`, }}>
+        <div className="hero h-96 bg-no-repeat bg-cover w-full" style={{ backgroundImage: `url(${img})`, }}>
             <div className="hero-overlay bg-opacity-30"></div>
             <div className="hero-content text-justify items-center text-neutral-content">
                 <div className="flex flex-col lg:flex-row">

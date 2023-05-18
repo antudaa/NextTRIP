@@ -1,5 +1,5 @@
 import React from 'react';
-import signUpBackground from "../../assets/Videos/SignUpBackground.mp4";
+import signUpBackground from "../../assets/Videos/bookingBg.mp4";
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 import logo from "../../assets/images/Logo.png";
