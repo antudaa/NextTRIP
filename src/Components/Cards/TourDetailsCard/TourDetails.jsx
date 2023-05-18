@@ -32,13 +32,11 @@ const TourDetails = () => {
 
 
 	// UseState to set The cover Image 
-	const [image, setImage] = useState("");
+	const [image, setImage] = useState(``);
 
 	// Set the value of setImage Inside use Effect to set the image data after rendering all the necessary data.
 	useEffect(() => {
-		if (data) {
-			setImage(data.CoverImage)
-		}
+		data && setImage(data.CoverImage)
 		// Giving data as a dependency so that after render data it will reset the image data 
 	}, data);
 
@@ -146,7 +144,7 @@ const TourDetails = () => {
 							<div className="relative px-4 mt-16  ">
 								<div className="">
 									<div className="flex items-baseline">
-										<span className="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full text-center uppercase font-semibold tracking-wide">
+										<span className="bg-teal-200 py-1 text-teal-800 text-xs px-2 inline-block rounded-full text-center uppercase font-semibold tracking-wide">
 											{joinedMembers} Travellers Already Joined Us
 										</span>
 										<div className="ml-2 text-gray-600 text-center uppercase text-xs font-semibold tracking-wider">
