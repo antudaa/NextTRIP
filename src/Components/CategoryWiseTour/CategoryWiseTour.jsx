@@ -8,6 +8,7 @@ const CategoryWiseTour = () => {
     const { category } = useParams();
 
     const { data } = useGetToursByCategoryQuery(category);
+    // console.log(data);
 
     return (
         <div>

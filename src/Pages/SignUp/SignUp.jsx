@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from "../../assets/images/Logo.png";
 import { useForm } from 'react-hook-form';
-import signUpBackground from "../../assets/Videos/robin-21723.mp4";
+import signUpBackground from "../../assets/Videos/beach.mp4";
 
 
 const SignUp = () => {
