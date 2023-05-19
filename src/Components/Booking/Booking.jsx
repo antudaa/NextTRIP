@@ -3,6 +3,7 @@ import signUpBackground from "../../assets/Videos/bookingBg.mp4";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/Logo.png";
+// import { CiLocationOn } from 'react-icons/ci';
 
 const Booking = () => {
 	const {
@@ -50,7 +51,7 @@ const Booking = () => {
 						</div>
 
 						{/* Sign Up Card */}
-						<div className="w-4/5 space-y-6 md:mt-0 lg:mt-8 bg-white rounded text-gray-600 sm:max-w-md">
+						<div className="w-full space-y-6 md:mt-0 lg:mt-8 bg-white rounded text-gray-600 sm:max-w-md">
 							<div className="text-center">
 								{/* Site Logo  */}
 								<img src={logo} width={150} className="mx-auto" />
@@ -66,43 +67,111 @@ const Booking = () => {
 									// onSubmit={handleSubmit(handleSignIn)}
 									className="space-y-5"
 								>
-									<div>
-										<label className="font-medium">From</label>
-										<input
-											{...register("from", {
-												required: "Where to go required",
-											})}
-											aria-invalid={errors.from ? "true" : "false"}
-											type="text"
-											placeholder="What's uour location?"
-											className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-										/>
-										{/* Error Message  */}
-										{errors.from && (
-											<p className="text-red-500" role="alert">
-												{errors.from?.message}
-											</p>
-										)}
-									</div>
-									<div>
-										<label className="font-medium">To</label>
-										<div className="relative w-full mt-2">
+									<div className="grid lg:grid-cols-2 md:grid-cols-1 gap-3">
+										<div>
+											<label className="font-medium">From</label>
+                                            
 											<input
-												type="text"
-												placeholder="Whre are you going?"
-												// Password Validation
-												{...register("to", {
+                                            
+												{...register("from", {
 													required: "Where to go required",
 												})}
+												aria-invalid={errors.from ? "true" : "false"}
+                                                
+												type="text"
+                                            
+												placeholder="What's your location?"
 												className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
 											/>
+											{/* Error Message  */}
+											{errors.from && (
+												<p className="text-red-500" role="alert">
+													{errors.from?.message}
+												</p>
+											)}
 										</div>
-										{/* Error Message  */}
-										{errors.to && (
-											<p className="text-red-500" role="alert">
-												{errors.to?.message}
-											</p>
-										)}
+										<div>
+											<label className="font-medium">To</label>
+											
+												<input
+													type="text"
+													placeholder="Whre are you going?"
+													// Password Validation
+													{...register("to", {
+														required: "Where to go required",
+													})}
+													className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+												/>
+											
+											{/* Error Message  */}
+											{errors.to && (
+												<p className="text-red-500" role="alert">
+													{errors.to?.message}
+												</p>
+											)}
+										</div>
+									</div>
+									<div className="grid lg:grid-cols-2 md:grid-cols-1 gap-3">
+										<div>
+											<label className="font-medium">Check-in</label>
+											<input
+												{...register("checkin", {
+													required: "Put check-in date",
+												})}
+												aria-invalid={errors.checkin ? "true" : "false"}
+												type="date"
+												placeholder="Add depart date!"
+												className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+											/>
+											{/* Error Message  */}
+											{errors.checkin && (
+												<p className="text-red-500" role="alert">
+													{errors.checkin?.message}
+												</p>
+											)}
+										</div>
+										<div>
+											<label className="font-medium">Check-out</label>
+											
+												<input
+													type="date"
+                                                    name="backtime"
+													placeholder="Add return date !"
+													// Password Validation
+													{...register("checkout", {
+														required: "Put check out date",
+													})}
+													className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+												/>
+											
+											{/* Error Message  */}
+											{errors.checkout && (
+												<p className="text-red-500" role="alert">
+													{errors.checkout?.message}
+												</p>
+											)}
+										</div>
+									</div>
+									<div className="grid lg:grid-cols-1 md:grid-cols-1 gap-3">
+										<div>
+											<label className="font-medium">Travellers</label>
+											<input
+												{...register("travell", {
+													required: "Where to go required",
+												})}
+												aria-invalid={errors.travell ? "true" : "false"}
+												type="number"
+												placeholder=" Total travellers !"
+												className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+											/>
+											{/* Error Message  */}
+											{errors.travell && (
+												<p className="text-red-500" role="alert">
+													{errors.travell?.message}
+												</p>
+											)}
+										</div>
+										
 									</div>
 									{/* Submit Button  */}
 									<button
