@@ -17,14 +17,24 @@ const Booking = () => {
 
 	const [postBook] = usePostBookMutation();
 
-	const {
-		fields: resFields,
-		append: resAppend,
-		remove: resRemove,
-	} = useFieldArray({ control, name: "from" });
+	// const {
+	// 	fields: resFields,
+	// 	append: resAppend,
+	// 	remove: resRemove,
+	// } = useFieldArray({ control, name: "from" });
+
+
 	const handleBooking = (data) => {
-		console.log("booking is confirm", data);
+		console.log(data);
+        postBook({...data, queries : []} )
+        
 	};
+    
+
+    //   const onSubmit = (data) => {
+    //     console.log(data);
+    //     postJob({...data, applicants : [], queries : []})
+    //   };
 
 	return (
 		<div className="relative">

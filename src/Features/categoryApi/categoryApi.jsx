@@ -18,7 +18,7 @@ const categoryApi = apiSlice.injectEndpoints({
                 method : "POST",
                 body : data,
             }),
-            invalidatesTags : ["Booking"]
+            // invalidatesTags : ["Booking"]
         }),
     })
 })
