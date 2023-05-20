@@ -1,8 +1,9 @@
 import React from "react";
 import signUpBackground from "../../assets/Videos/bookingBg.mp4";
-import { useForm } from "react-hook-form";
+import { useFieldArray, useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/Logo.png";
+import { usePostBookMutation } from "../../Features/categoryApi/categoryApi";
 // import { CiLocationOn } from 'react-icons/ci';
 
 const Booking = () => {
@@ -10,13 +11,20 @@ const Booking = () => {
 		register,
 		handleSubmit,
 		reset,
+		control,
 		formState: { errors },
 	} = useForm();
 
+	const [postBook] = usePostBookMutation();
 
-    const handleBooking =(data)=>{
-        console.log("booking is confirm" , data);
-    }
+	const {
+		fields: resFields,
+		append: resAppend,
+		remove: resRemove,
+	} = useFieldArray({ control, name: "from" });
+	const handleBooking = (data) => {
+		console.log("booking is confirm", data);
+	};
 
 	return (
 		<div className="relative">
@@ -35,7 +43,7 @@ const Booking = () => {
 							<h2 className="max-w-lg mb-6 font-sans lg:text-5xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
 								Find your next stay.
 								<br className="hidden md:block" />
-                                Discover how to get anywhere ...
+								Discover how to get anywhere ...
 							</h2>
 							<p className="max-w-xl mb-4 text-base text-gray-400 md:text-lg">
 								Search deals on hotels, homes, and much more...
@@ -76,16 +84,13 @@ const Booking = () => {
 									<div className="grid lg:grid-cols-2 md:grid-cols-1 gap-3">
 										<div>
 											<label className="font-medium">From</label>
-                                            
+
 											<input
-                                            
 												{...register("from", {
 													required: "Your location is required",
 												})}
 												aria-invalid={errors.from ? "true" : "false"}
-                                                
 												type="text"
-                                            
 												placeholder="What's your location?"
 												className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
 											/>
@@ -98,17 +103,17 @@ const Booking = () => {
 										</div>
 										<div>
 											<label className="font-medium">To</label>
-											
-												<input
-													type="text"
-													placeholder="Whre are you going?"
-													// Password Validation
-													{...register("to", {
-														required: "Where to go is required",
-													})}
-													className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-												/>
-											
+
+											<input
+												type="text"
+												placeholder="Whre are you going?"
+												// Password Validation
+												{...register("to", {
+													required: "Where to go is required",
+												})}
+												className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+											/>
+
 											{/* Error Message  */}
 											{errors.to && (
 												<p className="text-red-500" role="alert">
@@ -138,18 +143,17 @@ const Booking = () => {
 										</div>
 										<div>
 											<label className="font-medium">Check-out</label>
-											
-												<input
-													type="date"
-                                                    name="backtime"
-													placeholder="Add return date !"
-													
-													{...register("checkout", {
-														required: "Put check out date",
-													})}
-													className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-												/>
-											
+
+											<input
+												type="date"
+												name="backtime"
+												placeholder="Add return date !"
+												{...register("checkout", {
+													required: "Put check out date",
+												})}
+												className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+											/>
+
 											{/* Error Message  */}
 											{errors.checkout && (
 												<p className="text-red-500" role="alert">
@@ -177,7 +181,6 @@ const Booking = () => {
 												</p>
 											)}
 										</div>
-										
 									</div>
 									{/* Submit Button  */}
 									<button
