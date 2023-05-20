@@ -12,6 +12,12 @@ const Booking = () => {
 		reset,
 		formState: { errors },
 	} = useForm();
+
+
+    const handleBooking =(data)=>{
+        console.log("booking is confirm" , data);
+    }
+
 	return (
 		<div className="relative">
 			<video
@@ -26,10 +32,10 @@ const Booking = () => {
 				<div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
 					<div className="flex flex-col items-center justify-between xl:flex-row">
 						<div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
-							<h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
-								Find your next stay. Discover
+							<h2 className="max-w-lg mb-6 font-sans lg:text-5xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
+								Find your next stay.
 								<br className="hidden md:block" />
-								how to get anywhere
+                                Discover how to get anywhere ...
 							</h2>
 							<p className="max-w-xl mb-4 text-base text-gray-400 md:text-lg">
 								Search deals on hotels, homes, and much more...
@@ -64,7 +70,7 @@ const Booking = () => {
 							<div className="bg-white shadow p-4 py-6 space-y-8 sm:p-6 sm:rounded-lg">
 								{/* Submit Form  */}
 								<form
-									// onSubmit={handleSubmit(handleSignIn)}
+									onSubmit={handleSubmit(handleBooking)}
 									className="space-y-5"
 								>
 									<div className="grid lg:grid-cols-2 md:grid-cols-1 gap-3">
@@ -74,7 +80,7 @@ const Booking = () => {
 											<input
                                             
 												{...register("from", {
-													required: "Where to go required",
+													required: "Your location is required",
 												})}
 												aria-invalid={errors.from ? "true" : "false"}
                                                 
@@ -98,7 +104,7 @@ const Booking = () => {
 													placeholder="Whre are you going?"
 													// Password Validation
 													{...register("to", {
-														required: "Where to go required",
+														required: "Where to go is required",
 													})}
 													className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
 												/>
@@ -156,8 +162,8 @@ const Booking = () => {
 										<div>
 											<label className="font-medium">Travellers</label>
 											<input
-												{...register("travell", {
-													required: "Where to go required",
+												{...register("travellers", {
+													required: "Number of guest",
 												})}
 												aria-invalid={errors.travell ? "true" : "false"}
 												type="number"
