@@ -25,11 +25,6 @@ const Booking = () => {
 	};
     
 
-    //   const onSubmit = (data) => {
-    //     console.log(data);
-    //     postJob({...data, applicants : [], queries : []})
-    //   };
-
 	return (
 		<div className="relative">
 			<video
