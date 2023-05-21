@@ -17,12 +17,6 @@ const Booking = () => {
 
 	const [postBook] = usePostBookMutation();
 
-	// const {
-	// 	fields: resFields,
-	// 	append: resAppend,
-	// 	remove: resRemove,
-	// } = useFieldArray({ control, name: "from" });
-
 
 	const handleBooking = (data) => {
 		console.log(data);
