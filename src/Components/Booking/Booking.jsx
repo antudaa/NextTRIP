@@ -4,7 +4,7 @@ import { useFieldArray, useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/Logo.png";
 import { usePostBookMutation } from "../../Features/categoryApi/categoryApi";
-// import { CiLocationOn } from 'react-icons/ci';
+
 
 const Booking = () => {
 	const {
