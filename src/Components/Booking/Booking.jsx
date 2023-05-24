@@ -4,6 +4,7 @@ import { useFieldArray, useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/Logo.png";
 import { usePostBookMutation } from "../../Features/categoryApi/categoryApi";
+import { toast } from "react-hot-toast";
 
 
 const Booking = () => {
@@ -21,6 +22,7 @@ const Booking = () => {
 	const handleBooking = (data) => {
 		console.log(data);
         postBook({...data, queries : []} )
+		toast.success('Booking confirmed')
         
 	};
     
