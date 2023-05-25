@@ -32,11 +32,11 @@ export const googleLogin = createAsyncThunk("auth/googleLogin", async () => {
 });
 
 // Facebook Login 
-// export const facebookLogin = createAsyncThunk("auth/facebookLogin", async () => {
-//     const facebookProvider = new FacebookAuthProvider();
-//     const data = await signInWithPopup(auth, facebookProvider);
-//     return data.email;
-// });
+export const facebookLogin = createAsyncThunk("auth/facebookLogin", async () => {
+    const facebookProvider = new FacebookAuthProvider();
+    const data = await signInWithPopup(auth, facebookProvider);
+    return data.email;
+});
 
 const authSlice = createSlice({
     name: "auth",
