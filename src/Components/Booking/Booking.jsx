@@ -65,7 +65,7 @@ const Booking = () => {
 							</Link>
 						</div>
 
-						{/* Sign Up Card */}
+						{/* booking Card */}
 						<div className="w-full space-y-6 md:mt-0 lg:mt-8 bg-white rounded text-gray-600 sm:max-w-md">
 							<div className="text-center">
 								{/* Site Logo  */}
@@ -108,7 +108,7 @@ const Booking = () => {
 											<input
 												type="text"
 												placeholder="Whre are you going?"
-												// Password Validation
+												
 												{...register("to", {
 													required: "Where to go is required",
 												})}

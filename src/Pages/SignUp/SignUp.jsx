@@ -1,29 +1,45 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from "../../assets/images/Logo.png";
 import { useForm } from 'react-hook-form';
 import signUpBackground from "../../assets/Videos/beach.mp4";
+import { useDispatch, useSelector } from 'react-redux';
+import { createUser, facebookLogin, googleLogin } from '../../Features/Authentication/authslice';
+import { toast } from 'react-hot-toast';
 
+//abcABC123##
 
 const SignUp = () => {
 
     // React Hook Form 
-    const { register, handleSubmit, reset, formState: { errors } } = useForm();
-
+    const { register, handleSubmit,control, reset, formState: { errors } } = useForm();
+    const {isError, error} = useSelector((state)=> state.auth)
+    const navigate = useNavigate()
+    const dispatch = useDispatch()
     // Hide Password 
     const [isPasswordHidden, setPasswordHidden] = useState(true);
 
     // Handle SignIn 
-    const handleSignIn = () => {
+    const handleSignIn = (data) => {
+        console.log(data);
+        dispatch(createUser({email:data.email, password: data.password}))
     };
 
     // Handle Google Login 
     const handleGoogleLogin = () => {
+        dispatch(googleLogin())
     }
 
     // Handle Facebook Login 
     const handleFacebookLogin = () => {
+        dispatch(facebookLogin())
     };
+
+    useEffect(()=>{
+        if(isError){
+          toast.error(error)
+        }
+      },[isError, error])
 
 
     return (
