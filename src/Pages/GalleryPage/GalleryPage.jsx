@@ -80,7 +80,6 @@ const GalleryPage = () => {
 						rotate: 50,
 						stretch: 0,
 						depth: 100,
-						width: 50,
 						modifier: 1,
 						slideShadows: true,
 					}}
@@ -88,7 +87,7 @@ const GalleryPage = () => {
 					modules={[EffectCoverflow, Pagination]}
 					className="mySwiper"
 				>
-					<div>
+					<div className="">
 						<SwiperSlide className="w-[40%]">
 							<img src="https://swiperjs.com/demos/images/nature-1.jpg" />
 						</SwiperSlide>
@@ -122,7 +121,7 @@ const GalleryPage = () => {
 
 			{/* section 2 */}
 
-			<section className="py-6 dark:bg-gray-800 dark:text-gray-50">
+			<section className="py-6 dark:bg-gray-800 dark:text-gray-50 mt-10">
 				<div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
 					<img
 						src={img1}
