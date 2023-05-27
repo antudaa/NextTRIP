@@ -40,20 +40,20 @@ const TourDetails = () => {
 		// Giving data as a dependency so that after render data it will reset the image data 
 	}, data);
 
-
+//md:flex
 	return (
 		<div>
 			<div className="min-w-screen min-h-screen bg-[aliceblue] flex items-center p-5 lg:p-10 overflow-hidden relative">
-				<div className="w-full max-w-6xl rounded bg-white shadow-xl mx-auto text-gray-800 relative md:text-left">
-					<div className="md:flex gap-6 min-h-screen items-center py-4 px-8 lg:container mx-auto xl:px-24">
-						<div className="md:w-3/5 flex flex-col md:flex-row gap-6">
+				<div className="w-full max-w-7xl rounded bg-white shadow-xl mx-auto text-gray-800 relative md:text-left">
+					<div className="grid grid-cols-1  gap-3 min-h-screen items-center py-4 px-8 lg:container mx-auto">
+						<div className=" lg:w-full flex flex-col md:flex-row gap-4">
 							<img
 								id="expandedImg"
 								src={image}
 								alt="Sunrise shot of Downtown Dubai and Burj Khalifa."
-								className="w-9/12 object-cover h-auto sm:h-[24rem] lg:h-[27rem] aspect-[3/2]  mx-auto"
+								className="w-4/5 object-cover h-auto sm:h-[24rem] lg:h-[27rem] aspect-[3/2] mx-auto"
 							/>
-							<div className="flex flex-row md:flex-col flex-wrap align-center justify-around gap-2">
+							<div className="flex flex-row md:flex-col flex-wrap align-center mx-auto justify-around gap-2 w-40">
 								{images?.slice(0, 5).map((img, i) => (
 									<img
 										key={i}
@@ -65,7 +65,7 @@ const TourDetails = () => {
 								))}
 							</div>
 						</div>
-						<div className="md:w-2/5 xl:w-[45%]">
+						<div className="md:w-2/5 xl:w-[45%] mt-7">
 							<h2
 								className="text-3xl font-bold text-gray-800 mt-8 md:mt-0"
 								id="imgtext"
@@ -138,7 +138,8 @@ const TourDetails = () => {
 								</span>
 							</p>
 							<p className="text-gray-700 leading-relaxed">
-								{description?.slice(0, 400)}{" "}
+								{/* {description?.slice(0, 400)}{" "} */}
+								{description}{" "}
 								<span className="text-sm text-[blue]">.....more</span>{" "}
 							</p>
 							<div className="relative px-4 mt-16  ">
