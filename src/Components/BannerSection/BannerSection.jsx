@@ -10,7 +10,7 @@ const BannerSection = () => {
 
     return (
         <section>
-            <div className="max-w-screen-xxl mx-auto px-4 py-28 gap-12 text-gray-600 md:px-8 xl:flex">
+            <div className="max-w-screen-xxl mx-auto px-4 py-10 gap-12 text-gray-600 md:px-8 xl:flex">
                 <img src='https://i.ibb.co/5kXJFpM/Login-Page-Background.jpg'
                     className="absolute top-0 lg:top-0 left-0 w-full sm:h-[70%] h-[70%] lg:h-full opacity-90 object-cover " />
                 <div className="space-y-5 z-30 mx-auto text-center">
