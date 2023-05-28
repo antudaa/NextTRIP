@@ -113,7 +113,7 @@ const GalleryPage = () => {
 							<img src="https://swiperjs.com/demos/images/nature-8.jpg" />
 						</SwiperSlide>
 						<SwiperSlide className="w-[40%]">
-							<img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+							<img src="https://swiperjs.com/demos/images/nature-6.jpg" />
 						</SwiperSlide>
 					</div>
 				</Swiper>
