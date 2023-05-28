@@ -5,7 +5,7 @@ import logo from "../../assets/images/Logo.png";
 import { Link } from 'react-router-dom';
 import loginBackground from "../../assets/Videos/islands-2119.mp4";
 import { useDispatch, useSelector } from 'react-redux';
-import { loginUser } from '../../Features/Authentication/authslice';
+import { facebookLogin, googleLogin, loginUser } from '../../Features/Authentication/authslice';
 
 
 const Login = () => {
@@ -26,11 +26,12 @@ const Login = () => {
 
     // Handle Google Login 
     const handleGoogleLogin = () => {
-        
+        dispatch(googleLogin())
     }
 
     // Handle Facebook Login 
     const handleFacebookLogin = () => {
+        dispatch(facebookLogin())
     }
 
     return (
@@ -161,7 +162,7 @@ const Login = () => {
                                             />
                                         </div>
                                         {/* Error Message  */}
-                                        {errors.password && <p className='text-red-500' role="alert">{errors.password?.message}</p>}
+                                        {errors.password && <p className='text-red-500'>{errors.password?.message}</p>}
                                     </div>
                                     {/* Submit Button  */}
                                     <button type="submit"
