@@ -4,6 +4,8 @@ import { useForm } from 'react-hook-form';
 import logo from "../../assets/images/Logo.png";
 import { Link } from 'react-router-dom';
 import loginBackground from "../../assets/Videos/islands-2119.mp4";
+import { useDispatch, useSelector } from 'react-redux';
+import { loginUser } from '../../Features/Authentication/authslice';
 
 
 const Login = () => {
@@ -11,15 +13,20 @@ const Login = () => {
     // React Hook Form 
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
+    const dispatch = useDispatch()
+    const {email, isError, error} = useSelector((state) => state.auth)
+
     // Hide Password 
     const [isPasswordHidden, setPasswordHidden] = useState(true);
 
     // Handle SignIn 
-    const handleSignIn = () => {
+    const handleSignIn = ({email,password}) => {
+        dispatch(loginUser({email,isPasswordHidden}))
     };
 
     // Handle Google Login 
     const handleGoogleLogin = () => {
+        
     }
 
     // Handle Facebook Login 
@@ -116,7 +123,7 @@ const Login = () => {
                                             type="email" placeholder="E-mail" className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                                         />
                                         {/* Error Message  */}
-                                        {errors.email && <p className='text-red-500' role="alert">{errors.email?.message}</p>}
+                                        {errors.email && <p className='text-red-500'>{errors.email?.message}</p>}
                                     </div>
                                     <div>
                                         <label className="font-medium">
