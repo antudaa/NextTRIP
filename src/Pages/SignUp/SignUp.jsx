@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import logo from "../../assets/images/Logo.png";
-import { useForm } from 'react-hook-form';
+import { useForm,} from 'react-hook-form';
 import signUpBackground from "../../assets/Videos/beach.mp4";
 import { useDispatch, useSelector } from 'react-redux';
 import { createUser, facebookLogin, googleLogin } from '../../Features/Authentication/authslice';
@@ -17,14 +17,16 @@ const SignUp = () => {
     const navigate = useNavigate()
     const dispatch = useDispatch()
     // Hide Password 
+    
     const [isPasswordHidden, setPasswordHidden] = useState(true);
 
     // Handle SignIn 
-    const handleSignIn = (data) => {
+    const handleSignUp = (data) => {
         console.log(data);
         dispatch(createUser({email:data.email, password: data.password}))
     };
 
+    // console.log(handleSignUp);
     // Handle Google Login 
     const handleGoogleLogin = () => {
         dispatch(googleLogin())
@@ -110,7 +112,7 @@ const SignUp = () => {
                                 </div>
                                 {/* Submit Form  */}
                                 <form
-                                    onSubmit={handleSubmit(handleSignIn)}
+                                    onSubmit={handleSubmit(handleSignUp)}
                                     className="space-y-5"
                                 >
                                     <div>
@@ -118,10 +120,13 @@ const SignUp = () => {
                                             Email
                                         </label>
                                         <input
+                                        
+                                        name='email'
+                                        id='email'
                                             {...register("email",
                                                 { required: "Email Address is required" })}
-                                            aria-invalid={errors.email ? "true" : "false"}
-                                            type="email" placeholder="E-mail" className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                                            // aria-invalid={errors.email ? "true" : "false"}
+                                             placeholder="E-mail" className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                                         />
                                         {/* Error Message  */}
                                         {errors.email && <p className='text-red-500' role="alert">{errors.email?.message}</p>}
@@ -149,6 +154,9 @@ const SignUp = () => {
                                                 }
                                             </button>
                                             <input
+                                           
+                                            name='password'
+                                            id='password'
                                                 type={isPasswordHidden ? "password" : "text"}
                                                 placeholder="Password"
                                                 // Password Validation 
