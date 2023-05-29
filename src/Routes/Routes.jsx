@@ -54,7 +54,7 @@ export const routes = createBrowserRouter([
 				element: <ViewAllPackage />,
 			},
 			{
-				path: "/booking",
+				path: "/booking/:id",
 				element: <Booking />,
 			},
 		],
