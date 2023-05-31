@@ -65,7 +65,7 @@ const TourDetails = () => {
 								))}
 							</div>
 						</div>
-						<div className="md:w-2/5 xl:w-[45%] mt-7">
+						<div className="md:w-4/5 xl:w-[90%] mt-7">
 							<h2
 								className="text-3xl font-bold text-gray-800 mt-8 md:mt-0"
 								id="imgtext"
@@ -173,7 +173,7 @@ const TourDetails = () => {
 							</div>
 							<div className="flex justify-between mt-10">
 								<Link
-									to="/booking"
+									to={`/booking/${_id}`}
 									className="inline-block capitalize font-semibold text-lg border-[none] rounded-full bg-cyan-400 text-white py-2 px-4 hover:bg-blue-500 hover:text-white hover:border-blue-500"
 								>
 									book now

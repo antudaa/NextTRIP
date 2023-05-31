@@ -10,6 +10,8 @@ import CategoryWiseTour from "../Components/CategoryWiseTour/CategoryWiseTour";
 import Booking from "../Components/Booking/Booking";
 import ViewAllPackage from "../Components/Cards/ViewAllPackage/ViewAllPackage";
 import TourDetails from "../Components/Cards/TourDetailsCard/TourDetails";
+import DashboardPageHome from "../Pages/DashboardPageHome/DashboardPageHome";
+import DashboardLayout from "../Layouts/Main/DashboardLayout/DashboardLayout";
 
 export const routes = createBrowserRouter([
 	{
@@ -58,6 +60,17 @@ export const routes = createBrowserRouter([
 				element: <Booking />,
 			},
 		],
+	},
+	// Dashboard Route
+	{
+		path: "/dashboard",
+		element: <DashboardLayout />,
+		children: [
+			{
+				path: "/dashboard",
+				element: <DashboardPageHome />,
+			},
+		]
 	},
 	{
 		path: "*",
