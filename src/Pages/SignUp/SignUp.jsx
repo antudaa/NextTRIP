@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { createUser, facebookLogin, googleLogin } from '../../Features/Authentication/authslice';
 import { toast } from 'react-hot-toast';
 
+
 //abcABC123##
 
 const SignUp = () => {
@@ -24,17 +25,20 @@ const SignUp = () => {
     const handleSignUp = (data) => {
         console.log(data);
         dispatch(createUser({email:data.email, password: data.password}))
+        navigate('/');
     };
 
     // console.log(handleSignUp);
     // Handle Google Login 
     const handleGoogleLogin = () => {
         dispatch(googleLogin())
+        navigate('/');
     }
 
     // Handle Facebook Login 
     const handleFacebookLogin = () => {
         dispatch(facebookLogin())
+        navigate('/');
     };
 
     useEffect(()=>{

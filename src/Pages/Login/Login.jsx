@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import toast from "react-hot-toast";
 import { useForm } from 'react-hook-form';
 import logo from "../../assets/images/Logo.png";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import loginBackground from "../../assets/Videos/islands-2119.mp4";
 import { useDispatch, useSelector } from 'react-redux';
 import { facebookLogin, googleLogin, loginUser } from '../../Features/Authentication/authslice';
@@ -14,24 +14,28 @@ const Login = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     const dispatch = useDispatch()
+    
     const {email, isError, error} = useSelector((state) => state.auth)
-
+    const navigate = useNavigate()
     // Hide Password 
     const [isPasswordHidden, setPasswordHidden] = useState(true);
 
     // Handle SignIn 
     const handleSignIn = ({email,password}) => {
         dispatch(loginUser({email,isPasswordHidden}))
+        navigate('/');
     };
 
     // Handle Google Login 
     const handleGoogleLogin = () => {
         dispatch(googleLogin())
+        navigate('/');
     }
 
     // Handle Facebook Login 
     const handleFacebookLogin = () => {
         dispatch(facebookLogin())
+        navigate('/');
     }
 
     return (
