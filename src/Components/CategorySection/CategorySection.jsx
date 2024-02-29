@@ -6,7 +6,7 @@ const CategorySection = () => {
 
 
     return (
-        <div className='px-8 py-2 mt-7 lg:mt-40 mb-8'>
+        <div className='px-8 py-2 mt-7 md:mt-40 lg:mt-40 xl:mt-64 mb-8 '>
             <div className='mx-auto w-[90%] text-center md:text-start'>
                 <div className='pt-2 lg:pt-10 xl:pt-16'>
                     {/* Header Text For Category Section */}

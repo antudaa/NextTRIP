@@ -9,7 +9,7 @@ const ProfileDropDown = (props) => {
     const profileRef = useRef()
 
     const navigation = [
-        { title: "Dashboard", path: `/` },
+        { title: "Dashboard", path: `/dashboard` },
         { title: "Settings", path: `/` },
         { title: "Log out", path: `/` },
     ]
@@ -42,7 +42,7 @@ const ProfileDropDown = (props) => {
                 {
                     navigation.map((item, i) => (
                         <li key={i}>
-                            <Link key={i} className="block text-gray-600 lg:hover:bg-gray-50 lg:p-2.5" href={item.path}>
+                            <Link key={i} className="block text-gray-600 lg:hover:bg-gray-50 lg:p-2.5" to={item.path}>
                                 {item.title}
                             </Link>
                         </li>
@@ -82,7 +82,7 @@ const Navbar = () => {
         <nav className={`bg-[aliceblue] opacity-100  w-full border-none`}>
             <div className="flex items-center justify-between py-3 px-4 max-w-screen-xxl mx-auto md:px-8">
                 <div className="flex-none lg:flex-initial z-20">
-                    <Link href="/"
+                    <Link to="/"
                         className='cursor-pointer z-20'>
                         <img
                             src={logo}
