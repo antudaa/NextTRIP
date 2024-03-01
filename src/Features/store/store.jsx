@@ -1,6 +1,6 @@
 import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
-import authslice from "../Features/Authentication/authslice";
-import apiSlice from "../Features/api/apiSlice";
+import authslice from "../Authentication/authslice";
+import apiSlice from "../api/apiSlice";
 
 const store = configureStore({
 	reducer: {
