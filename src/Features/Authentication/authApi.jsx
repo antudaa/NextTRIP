@@ -1,25 +1,16 @@
 import apiSlice from "../api/apiSlice";
 
 const authApi = apiSlice.injectEndpoints({
-    endpoints: (builder)=>({
-        register : builder.mutation({
-            query : (data)=>({
-                method : 'POST',
-                url : '/user',
-                body : data,
-            }),
+	endpoints: (builder) => ({
+		register: builder.mutation({
+			query: (data) => ({
+				method: "POST",
+				url: "/user",
+				body: data,
+			}),
+            invalidatesTags: ["User"],
+		}),
+	}),
+});
 
-            // async onQueryStarted(data, {dispatch, queryFulfilled}){
-            //     try{
-            //         const res = await queryFulfilled;
-            //         dispatch(getUser(data.email))
-            //     }catch(error){
-            //         // Hudday
-            //     }
-            // }
-
-        })
-    })
-})
-
-export const {useRegisterMutation} = authApi
+export const { useRegisterMutation } = authApi;

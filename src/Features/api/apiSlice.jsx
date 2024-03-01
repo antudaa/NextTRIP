@@ -5,6 +5,7 @@ const apiSlice = createApi({
         baseUrl : import.meta.env.VITE_DEV_URL,
         // baseUrl : 'http://localhost:5000' ,
     }),
+    tagTypes: ["User","Image" ],
     endpoints : (builder) =>({})
 })
 
